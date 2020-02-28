@@ -1,99 +1,92 @@
-#include<iostream>
-#include<string.h>
+#include "plane.h"
 #ifndef QUEUE_H
 #define QUEUE_H
 
+const int TAM = 1000;
 
-template<class Item>
 class Queue
 {
     private:
-        /*Item * q;*/
+        Plane * q;
+        int ini;
         int n;
-        int tam;
-        void resize();
 
     public:
-        Item * q;
         Queue();
         ~Queue();
-        void push(Item item);
-        Item pop();
+        void push(Plane plane);
+        Plane pop();
         bool empty();
         int size();
-        Item front();
-        Item back();
+        Plane front();
+        Plane back();
+        /* outras funcoes que nao sao proprias da estrutura de dados fila*/
+
+        void updateQueue();
+
 };
 
-template<class Item>
-Queue<Item>::Queue(): n(0), tam(10), q(new Item[10]) {};
+Queue::Queue(): ini(0), n(0), q(new Plane[TAM]) {};
 
-template<class Item>
-Queue<Item>::~Queue()
+Queue::~Queue()
 {
     if(q != NULL)
         delete [] q;
 }
 
-template<class Item>
-Item Queue<Item>::pop()
+Plane Queue::pop()
 {
     if(n > 0)
     {
-        Item aux;
-        aux = q[n-1];
+        Plane aux;
+        aux = q[ini];
         n--;
+        ini++; ini %= TAM;
         return aux;
     }
 }
 
-template<class Item>
-bool Queue<Item>::empty()
+bool Queue::empty()
 {
     return (n == 0);
 }
 
-template<class Item>
-int Queue<Item>::size()
+int Queue::size()
 {
     return n;
 }
 
-template<class Item>
-Item Queue<Item>::back()
+Plane Queue::back()
 {
     if(n > 0)
-        return q[0];
+        return q[(ini + n - 1)%TAM];
 }
 
-template<class Item>
-Item Queue<Item>::front()
+Plane Queue::front()
 {
     if(n > 0)
-        return q[n-1];
+        return q[ini];
 }
 
-template<class Item>
-void Queue<Item>::resize()
+void Queue::push(Plane plane)
 {
-    Item * novoVetor = new Item[2*tam];
-    for (int i = 0; i < n; i++)
-        novoVetor[i] = q[i];
-    delete[] q;
-    q = novoVetor; 
-    tam = tam * 2;
-}
-
-template<class Item>
-void Queue<Item>::push(Item item)
-{
-    if(n > tam) resize();
-
-    for(int i = n; i >= 1; i--)
-        q[i] = q[i-1];
+    q[(ini + n)%TAM] = plane;
     n++;
+}
 
-    q[0] = item;
+
+/* funcoes auxiliares*/
+
+void Queue::updateQueue()
+{
+    Plane aux;
+    int i, j, k;
+    j = ini;
+    for(i = j+3; i >= j; i--)
+    {
+          
+    }
+
 }
 
 #endif

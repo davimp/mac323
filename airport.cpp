@@ -1,28 +1,6 @@
 #include "queue.h"
+#include "plane.h"
 using namespace std;
-
-class plane
-{
-    public:
-        string id;
-        string from;
-        string to;
-        /*bool landing*/
-
-        int fuel;
-        int estimated_time;
-        bool emergency; /* maybe there is a better way to do that */
-
-        int waiting_time;
-        int track_time; /*auxiliar variable to control the time when the flight track will be ocupied*/
-        /*on this atribute, everyone begins with 3*/
-    
-    public:
-
-    /* define the operators, among other things */
-}
-
-
 int T; /* unidades de tempo */
 int K;
 int t;
@@ -33,8 +11,7 @@ int average_time, average_fuel, available_fuel, average_wait, emergencies;
 /* varaiveis que ajudam a controlar as informções pedidas no enunciado do ep */
 int takeoffs, landings, delays;
 
-
-Queue<plane> airport;
+Queue<Plane> airport;
 
 int main()
 {
@@ -48,7 +25,7 @@ int main()
         for(k = 0; k < K; k++)
         {
             /* lê os k aviões e coloca eles na fila*/
-            plane aux;
+            Plane aux;
             cin >> aux.id;
             cin >> aux.from;
             cin >> aux.to;
