@@ -1,22 +1,25 @@
-#include "pqueue.h"
-#include "plane.h"
+#include "queue2.h"
 using namespace std;
-int T; /* time */
+
+/*string t_id, string t_from_to, bool t_landing, int t_fuel, int t_estimated_time*/
+
+Queue fila;
 
 int main(){    
-    Priority_queue<Plane> fila;
-
-    Plane aviao {"ASD", 2, "CTP", 10, 8, 7};
-    Plane aviao2 {"AWD", 4, "GTP", 6, 5, 4};
+    Plane aviao {"ASD", "GRU", true, 10, 8};
+    Plane aviao2 {"AWD", "GTP", true, 6, 5};
+    Plane aux;
+    double av;
 
     fila.push(aviao);
     fila.push(aviao2);
 
-    Plane x;
-    int y;
-    x = fila.front();
+    /*aux = fila.pop();*/
 
-    y = x.fuel;
+    fila.printQueue();
 
-    cout << fila.size() << endl;
+    av = fila.totalTakeoffQueue();
+    
+    cout << "hello" << endl;
+    cout << av << endl;
 }

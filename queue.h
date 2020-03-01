@@ -4,6 +4,7 @@
 
 const int TAM = 1000;
 
+
 class Queue
 {
     private:
@@ -23,7 +24,10 @@ class Queue
         /* outras funcoes que nao sao proprias da estrutura de dados fila*/
 
         void updateQueue();
-
+        void printQueue();
+        double averageTakeoffQueue();
+        double averageLandingQueue();
+        double averageFuelQueue();
 };
 
 Queue::Queue(): ini(0), n(0), q(new Plane[TAM]) {};
@@ -77,16 +81,79 @@ void Queue::push(Plane plane)
 
 /* funcoes auxiliares*/
 
-void Queue::updateQueue()
-{
-    Plane aux;
-    int i, j, k;
-    j = ini;
-    for(i = j+3; i >= j; i--)
-    {
-          
-    }
 
+void Queue::updateQueue()
+{   
+    int i;
+    for(i = ini; i < ini + n; i++)
+    {
+       /* aprende a codar */   
+    }
 }
+
+void Queue::printQueue()
+{
+    int i;
+    for(i = ini; i < ini + n; i++)
+        cout << q[i].id << endl;
+}
+
+double Queue::averageTakeoffQueue()
+{
+    int i, cnt;
+    double average;
+    average = 0;
+    cnt = 0;
+    for(i = ini; i < ini + n; i++)
+        if(!q[i].landing)
+        {
+            cnt++;
+            average += q[i].waiting_time;
+        }
+    
+    if(cnt != 0) average /= cnt;
+
+    return average;
+}
+
+double Queue::averageLandingQueue()
+{
+    int i, cnt;
+    double average;
+    average = 0;
+    cnt = 0;
+    for(i = ini; i < ini + n; i++)
+        if(q[i].landing)
+        {
+            cnt++;
+            average += q[i].waiting_time;
+        }
+    
+    if(cnt != 0) average /= cnt;
+
+    return average;
+}
+
+double Queue::averageFuelQueue()
+{
+    int i, cnt;
+    double average;
+    average = 0;
+    cnt = 0;
+    for(i = ini; i < ini + n; i++)
+        if(q[i].landing)
+        {
+            cnt++;
+            average += q[i].fuel;
+        }
+
+
+    if(cnt != 0) average /= cnt;
+
+    return average;
+}
+
+
+
 
 #endif

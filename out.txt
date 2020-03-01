@@ -1,0 +1,39 @@
+*----------------------------------------------------------*
+TEMPO : 0
+1) Aviões em espera 
+   1.1) fila geral
+   1.2) fila de emergencia 
+   ASD
+2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  1
+3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade media de combustivel dos aviões em espera:  19
+5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  1
+*----------------------------------------------------------*
+TEMPO : 1
+1) Aviões em espera 
+   1.1) fila geral
+   QWE
+   RTY
+   1.2) fila de emergencia 
+   ASD
+2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  1
+3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0.333333
+4) Quantidade media de combustivel dos aviões em espera:  20.6667
+5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  1
+*----------------------------------------------------------*
+TEMPO : 2
+1) Aviões em espera 
+   1.1) fila geral
+   QWE
+   RTY
+   1.2) fila de emergencia 
+   ASD
+   FGH
+2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  1.5
+3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0.5
+4) Quantidade media de combustivel dos aviões em espera:  28.75
+5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  2
+*----------------------------------------------------------*
