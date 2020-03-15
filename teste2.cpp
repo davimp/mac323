@@ -20,10 +20,16 @@ Plane track1, track2, track3;
 
 Queue normal;
 Queue emergencies;
+Queue landed;
+Queue departed;
+Queue fail;
 
 int main()
 {
     int i;
+    track3.track_time = 0;
+    track2.track_time = 0;
+    track1.track_time = 0;
 
     cin >> T;
 
@@ -48,15 +54,124 @@ int main()
             if(aux.emergency) emergencies.push(aux);
             else normal.push(aux);
         }
-        /* faz ajustes necessários (talvez seja melhor substituir por updateQueue) */
+
+
+        /* controle das pistas */
+
+        /* pista 3 - para casos normais, só pode ser usada para decolagem*/
+        if(track3.track_time <= 0)
+        {
+            if(t > 0)
+            {
+                if(track3.landing)
+                {
+                    landed.push(track3);
+                }
+                else
+                {
+                    departed.push(track3);
+                }
+                
+            }
+
+            /* put on landings or departures queue*/
+            if(!emergencies.empty())
+            {
+                track3 = emergencies.pop();
+            }
+            else if(!normal.empty())
+            {
+                track3 = normal.specialPop();
+            }
+        }
+
+        /* pista 1 */
+        if(track1.track_time <= 0)
+        {
+            if(t > 0)
+            {
+                if(track2.landing)
+                {
+                    landed.push(track1);
+                }
+                else
+                {
+                    departed.push(track1);
+                }
+                
+            }
+
+            /* put on landings or departures queue*/
+            if(!emergencies.empty())
+            {
+                track1 = emergencies.pop();
+            }
+            else if(!normal.empty())
+            {
+                track1 = normal.pop();
+            }
+        }
+
+        /* pista 2 */
+        if(track2.track_time <= 0)
+        {
+            /* put on landings or departures queue*/
+
+            if(t > 0)
+            {
+                if(track2.landing)
+                {
+                    landed.push(track2);
+                }
+                else
+                {
+                    departed.push(track2);
+                }
+                
+            }
+
+            if(!emergencies.empty())
+            {
+                track2 = emergencies.pop();
+            }
+            else if(!normal.empty())
+            {
+                track2 = normal.pop();
+            }
+        }
+
+        /* vê se tem algum avião que tem que ser mandado embora */
+        while(!emergencies.empty())
+        {
+            Plane aux;
+            aux = emergencies.pop();
+            fail.push(aux);
+        }
+
+        /*atualiza*/
         normal.updateQueue();
         emergencies.updateQueue();
+        track1.track_time--;
+        track2.track_time--;
+        track3.track_time--;
 
+        /* checa na fila normal se tem algum aviao que deve ser mandado para a fila de emergencia */
 
+        Plane aux;
+
+        aux = normal.emergencyPop();
+        while(aux.emergency)
+        {
+            emergencies.push(aux);
+            aux = normal.emergencyPop();
+        }
         
+        /* ... */
 
         /* coleta dados */
-        n = normal.size() + emergencies.size();
+        n = normal.size();
+        if(n == 0) n = 1; /* para não occorer divisão por zero mais na frente */ 
+
         average_time = normal.totalLandingQueue() + emergencies.totalLandingQueue(); /*average_time /= n;*/
         average_wait = normal.totalTakeoffQueue() + emergencies.totalTakeoffQueue(); /*average_wait /= n;*/
         average_fuel = normal.totalFuelQueue() + emergencies.totalFuelQueue(); /*available_fuel /= n;*/

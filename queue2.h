@@ -25,13 +25,16 @@ class Queue
         bool empty();
         int size();
         Plane front();
-        /* outras funcoes que nao sao proprias da estrutura de dados fila*/
+        /* outras funcoes que nao sao proprias da estrutura de dados fila */
 
         void updateQueue();
         void printQueue();
         double totalTakeoffQueue();
         double totalLandingQueue();
         double totalFuelQueue();
+
+        Plane specialPop();
+        Plane emergencyPop();
 };
 
 Queue::Queue()
@@ -71,7 +74,7 @@ Plane Queue::pop()
         ini->next = ini->next->next;
 
         aviao = aux->plane;
-        free(aux);
+        delete aux;
 
         return aviao;
     }
@@ -131,19 +134,44 @@ void Queue::updateQueue()
     }
 }
 
+/*
+         id;
+        string from_to;
+        bool emergency;
+        int estimated_time;
+        int waiting_time;
+/*
+        int track_time;
+        int fuel;
+        bool landing;
+*/
+
 void Queue::printQueue()
 {
+    string emergencia, pouso;
     Node * i;
     i = ini->next;
+    cout << "    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  " << endl;
     while(i != NULL)
     {
-        cout << "   " << i->plane.id << endl;
+        if(i->plane.emergency)
+            emergencia = "SIM";
+        else
+            emergencia = "NÃO";
+
+        if(i->plane.landing)
+            pouso = "POUSO";
+        else
+            pouso = "DECOLAGEM";
+        
+        cout << "   " << i->plane.id << " | " << i->plane.from_to << " | " << emergencia << " | " << i->plane.waiting_time << " | " << i->plane.fuel << " | " << pouso;
         i = i->next;
     }
 }
 
 double Queue::totalTakeoffQueue()
 {
+    if(n == 0) return 0;
     Node * i;
     double total;
     total = 0;
@@ -163,6 +191,7 @@ double Queue::totalTakeoffQueue()
 
 double Queue::totalLandingQueue()
 {
+    if(n == 0) return 0;
     Node * i;
     double total;
     total = 0;
@@ -182,6 +211,7 @@ double Queue::totalLandingQueue()
 
 double Queue::totalFuelQueue()
 {
+    if(n == 0) return 0;
     Node * i;
     double total;
     total = 0;
@@ -199,7 +229,51 @@ double Queue::totalFuelQueue()
     return total;
 }
 
+Plane Queue::specialPop()
+{
+    /* só irá ser chamada caso a lista não esteja vazia e se for a pista 3 com a fila de emergência vazia */
+    Plane aviao;
+    Node * aux, * p;
+    p = ini;
 
+    while(p->next != nullptr && (p->next->plane.landing))
+        p = p->next;
+    
+    if(p->next != nullptr)
+    {
+        aux = p->next;
+        p->next = aux->next;
+        aviao = aux->plane;
+        delete aux;
+        n--;
+    }
 
+    return aviao;
+}
+
+Plane Queue::emergencyPop()
+{
+    /* só irá ser chamada caso a lista não esteja vazia e se for a pista 3 com a fila de emergência vazia */
+    Plane aviao;
+    Node * aux, * p;
+    p = ini;
+
+    aviao.emergency = 0;
+
+    while(p->next != nullptr && (p->next->plane.fuel) && (p->next->plane.waiting_time > 0.1*p->next->plane.estimated_time))
+        p = p->next;
+    
+    if(p->next != nullptr)
+    {
+        aux = p->next;
+        p->next = aux->next;
+        aviao = aux->plane;
+        aviao.emergency = 1;
+        delete aux;
+        n--;
+    }
+
+    return aviao;
+}
 
 #endif
