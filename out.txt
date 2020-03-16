@@ -1,10 +1,13 @@
 *--------------------------------------------------------------------------------------*
 TEMPO : 0 de 3
-1 aviões entraram em contato
+4 aviões entraram em contato
 1) Aviões: 
    1.1) fila geral
 
-     Essa fila não possui aviões
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      ANF       |    NÃO     |        1        |     3       | POUSO
+    |   LA734  |      AQP       |    NÃO     |        1        |     3       | POUSO
 
    1.2) fila de emergencia 
 
@@ -22,22 +25,25 @@ TEMPO : 0 de 3
 
      Essa fila não possui aviões
 
-2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  2
 3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade de combustivel dos aviões em espera:  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  6
 5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
 7) Pistas :
-   Pista 1 : livre
-   Pista 2 : livre
-   Pista 3 : ASD3456
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : livre
 *--------------------------------------------------------------------------------------*
 TEMPO : 1 de 3
-2 aviões entraram em contato
+0 aviões entraram em contato
 1) Aviões: 
    1.1) fila geral
 
-     Essa fila não possui aviões
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      ANF       |    NÃO     |        2        |     2       | POUSO
+    |   LA734  |      AQP       |    NÃO     |        2        |     2       | POUSO
 
    1.2) fila de emergencia 
 
@@ -55,22 +61,25 @@ TEMPO : 1 de 3
 
      Essa fila não possui aviões
 
-2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  4
 3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade de combustivel dos aviões em espera:  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  4
 5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
 7) Pistas :
-   Pista 1 : QWE3456
-   Pista 2 : RTY2345
-   Pista 3 : ASD3456
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : livre
 *--------------------------------------------------------------------------------------*
 TEMPO : 2 de 3
-1 aviões entraram em contato
+0 aviões entraram em contato
 1) Aviões: 
    1.1) fila geral
 
-     Essa fila não possui aviões
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      ANF       |    NÃO     |        3        |     1       | POUSO
+    |   LA734  |      AQP       |    NÃO     |        3        |     1       | POUSO
 
    1.2) fila de emergencia 
 
@@ -86,22 +95,20 @@ TEMPO : 2 de 3
 
    1.5) aviões que deram erro 
 
-    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
-    +----------+----------------+------------+-----------------+-------------+-----------------+
-    |  FGH3455 |      FGH       |    SIM     |        0        |     56      | POUSO
+     Essa fila não possui aviões
 
-2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  6
 3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade de combustivel dos aviões em espera:  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  2
 5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
 7) Pistas :
-   Pista 1 : QWE3456
-   Pista 2 : RTY2345
-   Pista 3 : ASD3456
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : livre
 *--------------------------------------------------------------------------------------*
 TEMPO : 3 de 3
-1 aviões entraram em contato
+0 aviões entraram em contato
 1) Aviões: 
    1.1) fila geral
 
@@ -115,7 +122,8 @@ TEMPO : 3 de 3
 
     |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
     +----------+----------------+------------+-----------------+-------------+-----------------+
-    |  ASD3456 |      ASD       |    SIM     |        0        |     20      | POUSO
+    |   LA329  |      ACA       |    NÃO     |        0        |     4       | POUSO
+    |   LA563  |      ADZ       |    NÃO     |        0        |     4       | POUSO
 
    1.4) aviões que decolaram 
 
@@ -123,17 +131,15 @@ TEMPO : 3 de 3
 
    1.5) aviões que deram erro 
 
-    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
-    +----------+----------------+------------+-----------------+-------------+-----------------+
-    |  FGH3455 |      FGH       |    SIM     |        0        |     56      | POUSO
+     Essa fila não possui aviões
 
 2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
 3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade de combustivel dos aviões em espera:  0
-5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  8
 6) Quantidade de avioes em condição de emergência (total):  0
 7) Pistas :
-   Pista 1 : QWE3456
-   Pista 2 : RTY2345
-   Pista 3 : ARF2343
+   Pista 1 : LA923
+   Pista 2 : LA734
+   Pista 3 : livre
 *--------------------------------------------------------------------------------------*

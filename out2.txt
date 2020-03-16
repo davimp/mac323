@@ -1,0 +1,887 @@
+*--------------------------------------------------------------------------------------*
+TEMPO : 0 de 18
+7 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      GRU       |    NÃO     |        1        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        1        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        1        |     23      | DECOLAGEM
+    |   LA832  |      BJX       |    NÃO     |        1        |     2       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  1
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  3
+4) Quantidade de combustivel dos aviões em espera para pousar:  2
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : JB666
+*--------------------------------------------------------------------------------------*
+TEMPO : 1 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      GRU       |    NÃO     |        2        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        2        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        2        |     23      | DECOLAGEM
+    |   LA832  |      BJX       |    NÃO     |        2        |     1       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  2
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  6
+4) Quantidade de combustivel dos aviões em espera para pousar:  1
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : JB666
+*--------------------------------------------------------------------------------------*
+TEMPO : 2 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        3        |     23      | DECOLAGEM
+    |   LA832  |      BJX       |    NÃO     |        3        |     0       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  3
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  9
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : JB666
+*--------------------------------------------------------------------------------------*
+TEMPO : 3 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA140  |      GRU       |    NÃO     |        4        |     23      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  4
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA923
+   Pista 2 : LA734
+   Pista 3 : LA832
+*--------------------------------------------------------------------------------------*
+TEMPO : 4 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA140  |      GRU       |    NÃO     |        5        |     23      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  5
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA923
+   Pista 2 : LA734
+   Pista 3 : LA832
+*--------------------------------------------------------------------------------------*
+TEMPO : 5 de 18
+6 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        1        |     9       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        1        |     9       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        1        |     9       | POUSO
+    |   LA111  |      GRU       |    NÃO     |        1        |     10      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  5
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  7
+4) Quantidade de combustivel dos aviões em espera para pousar:  45
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA923
+   Pista 2 : LA734
+   Pista 3 : LA832
+*--------------------------------------------------------------------------------------*
+TEMPO : 6 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA887  |      BVB       |    NÃO     |        2        |     8       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        2        |     8       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        2        |     8       | POUSO
+    |   LA111  |      GRU       |    NÃO     |        2        |     10      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  6
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  2
+4) Quantidade de combustivel dos aviões em espera para pousar:  24
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA485
+   Pista 2 : LA300
+   Pista 3 : LA140
+*--------------------------------------------------------------------------------------*
+TEMPO : 7 de 18
+3 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA887  |      BVB       |    NÃO     |        3        |     7       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        3        |     7       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        3        |     7       | POUSO
+    |   LA111  |      GRU       |    NÃO     |        3        |     10      | DECOLAGEM
+    |   LA344  |      CGR       |    NÃO     |        1        |     4       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        1        |     8       | POUSO
+    |   LA875  |      GRU       |    NÃO     |        1        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  11
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  4
+4) Quantidade de combustivel dos aviões em espera para pousar:  33
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA485
+   Pista 2 : LA300
+   Pista 3 : LA140
+*--------------------------------------------------------------------------------------*
+TEMPO : 8 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        4        |     6       | POUSO
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+    |   LA344  |      CGR       |    NÃO     |        2        |     3       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        2        |     7       | POUSO
+    |   LA875  |      GRU       |    NÃO     |        2        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  16
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  6
+4) Quantidade de combustivel dos aviões em espera para pousar:  28
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA485
+   Pista 2 : LA300
+   Pista 3 : LA140
+*--------------------------------------------------------------------------------------*
+TEMPO : 9 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA554  |      CBB       |    NÃO     |        5        |     5       | POUSO
+    |   LA344  |      CGR       |    NÃO     |        3        |     2       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        3        |     6       | POUSO
+    |   LA875  |      GRU       |    NÃO     |        3        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  11
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  3
+4) Quantidade de combustivel dos aviões em espera para pousar:  13
+5) Quantidade de combustivel disponível dos avioes que pousaram:  18
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA887
+   Pista 2 : LA993
+   Pista 3 : LA111
+*--------------------------------------------------------------------------------------*
+TEMPO : 10 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA554  |      CBB       |    NÃO     |        6        |     4       | POUSO
+    |   LA344  |      CGR       |    NÃO     |        4        |     1       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        4        |     5       | POUSO
+    |   LA875  |      GRU       |    NÃO     |        4        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  14
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  4
+4) Quantidade de combustivel dos aviões em espera para pousar:  10
+5) Quantidade de combustivel disponível dos avioes que pousaram:  18
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA887
+   Pista 2 : LA993
+   Pista 3 : LA111
+*--------------------------------------------------------------------------------------*
+TEMPO : 11 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA554  |      CBB       |    NÃO     |        7        |     3       | POUSO
+    |   LA344  |      CGR       |    NÃO     |        5        |     0       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        5        |     4       | POUSO
+    |   LA875  |      GRU       |    NÃO     |        5        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  17
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  5
+4) Quantidade de combustivel dos aviões em espera para pousar:  7
+5) Quantidade de combustivel disponível dos avioes que pousaram:  18
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA887
+   Pista 2 : LA993
+   Pista 3 : LA111
+*--------------------------------------------------------------------------------------*
+TEMPO : 12 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA875  |      GRU       |    NÃO     |        6        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  6
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  30
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA554
+   Pista 2 : LA461
+   Pista 3 : LA344
+*--------------------------------------------------------------------------------------*
+TEMPO : 13 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA875  |      GRU       |    NÃO     |        7        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  7
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  30
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA554
+   Pista 2 : LA461
+   Pista 3 : LA344
+*--------------------------------------------------------------------------------------*
+TEMPO : 14 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA875  |      GRU       |    NÃO     |        8        |     20      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  8
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  30
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA554
+   Pista 2 : LA461
+   Pista 3 : LA344
+*--------------------------------------------------------------------------------------*
+TEMPO : 15 de 18
+3 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA505  |      COR       |    NÃO     |        1        |     0       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+    |   LA344  |      CGR       |    SIM     |        5        |     0       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        7        |     3       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        5        |     4       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  1
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA899
+   Pista 2 : LA875
+   Pista 3 : LA673
+*--------------------------------------------------------------------------------------*
+TEMPO : 16 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+     Essa fila não possui aviões
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+    |   LA344  |      CGR       |    SIM     |        5        |     0       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        7        |     3       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        5        |     4       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA505  |      COR       |    SIM     |        1        |     0       | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA899
+   Pista 2 : LA875
+   Pista 3 : LA673
+*--------------------------------------------------------------------------------------*
+TEMPO : 17 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+     Essa fila não possui aviões
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+    |   LA344  |      CGR       |    SIM     |        5        |     0       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        7        |     3       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        5        |     4       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA505  |      COR       |    SIM     |        1        |     0       | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA899
+   Pista 2 : LA875
+   Pista 3 : LA673
+*--------------------------------------------------------------------------------------*
+TEMPO : 18 de 18
+0 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+     Essa fila não possui aviões
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA832  |      BJX       |    SIM     |        3        |     0       | POUSO
+    |   LA485  |      BPS       |    NÃO     |        1        |     9       | POUSO
+    |   LA300  |      BHI       |    NÃO     |        1        |     9       | POUSO
+    |   LA887  |      BVB       |    NÃO     |        4        |     6       | POUSO
+    |   LA993  |      CAU       |    NÃO     |        4        |     6       | POUSO
+    |   LA344  |      CGR       |    SIM     |        5        |     0       | POUSO
+    |   LA554  |      CBB       |    NÃO     |        7        |     3       | POUSO
+    |   LA461  |      CKS       |    NÃO     |        5        |     4       | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   JB666  |      GRU       |    SIM     |        0        |     10      | DECOLAGEM
+    |   LA329  |      GRU       |    NÃO     |        0        |     10      | DECOLAGEM
+    |   LA563  |      GRU       |    NÃO     |        0        |     4       | DECOLAGEM
+    |   LA923  |      GRU       |    NÃO     |        3        |     5       | DECOLAGEM
+    |   LA734  |      GRU       |    NÃO     |        3        |     6       | DECOLAGEM
+    |   LA140  |      GRU       |    NÃO     |        6        |     23      | DECOLAGEM
+    |   LA111  |      GRU       |    NÃO     |        4        |     10      | DECOLAGEM
+    |   LA673  |      GRU       |    SIM     |        0        |     30      | DECOLAGEM
+    |   LA899  |      GRU       |    SIM     |        0        |     30      | DECOLAGEM
+    |   LA875  |      GRU       |    NÃO     |        8        |     20      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA505  |      COR       |    SIM     |        1        |     0       | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : livre
+   Pista 2 : livre
+   Pista 3 : livre
+*--------------------------------------------------------------------------------------*

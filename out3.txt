@@ -1,0 +1,37 @@
+*--------------------------------------------------------------------------------------*
+TEMPO : 0 de 0
+4 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   LA923  |      ANF       |    NÃO     |        1        |     1       | POUSO
+    |   LA734  |      AQP       |    NÃO     |        1        |     1       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  2
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  2
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : LA329
+   Pista 2 : LA563
+   Pista 3 : livre
+*--------------------------------------------------------------------------------------*

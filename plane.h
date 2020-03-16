@@ -24,8 +24,6 @@ class Plane
         int track_time;
         int fuel;
         bool landing;
-
-        bool isLanding(Plane p);
 };
 
 Plane::Plane()
@@ -51,10 +49,5 @@ Plane::Plane(string t_id, string t_from_to, bool t_landing, bool t_emergency, in
     this->track_time = 3; /*sempre comeca com 3*/ 
 }
 
-
-bool Plane::isLanding(Plane p)
-{
-    return p.landing; 
-}
 
 #endif

@@ -127,7 +127,7 @@ void Queue::updateQueue()
     i = ini->next;
     while(i != NULL)
     {
-        (i->plane.fuel) -= 1;
+        if(i->plane.landing) (i->plane.fuel) -= 1;
         (i->plane.waiting_time) += 1;
 
         i = i->next;
@@ -158,7 +158,7 @@ void Queue::printQueue()
         else
             pouso = "DECOLAGEM";
         
-        cout << "    |  " << i->plane.id << " |      " << i->plane.from_to << "       |    " << emergencia << "     |        " << i->plane.waiting_time << "        |     ";
+        cout << "    |   " << i->plane.id << "  |      " << i->plane.from_to << "       |    " << emergencia << "     |        " << i->plane.waiting_time << "        |     ";
         if(i->plane.fuel >= 10) cout << i->plane.fuel << "      | " << pouso << endl;
         else cout << i->plane.fuel << "       | " << pouso << endl;
         i = i->next;

@@ -110,11 +110,13 @@ Depois disso, temos que mandar os aviões paras as pistas, que são representada
 Para fazer isso, eu checo quanto tempo o avião "está" na pista (considerando que cada avião gasta 3 tempos para fazer uma ação) e, além disso, checo o tempo estimado do avião.
 Esse útlimo passo foi uma alternativa encontrada para evitar que o avião seja enviado mais de uma vez pra fila dos que pousaram ou decolaram (para cada avião que já foi mandado pra lista de pouso ou decolagem, eu coloco um valor negativo no tempo estimado). Caso a pista esteja livre, eu coloco primeiro os aviões de emergência, e, se não tiver mais aviões de emergência, coloco algum da fila normal (nesse passo há pequenas alterações para o caso da pista 3). Para maior eficiência na alocação dos aviões, essa etapa é feita primeiramente para a pista 3.\newline
 
-Sobre a eficiência do programa: No enunciado do ep foi pedido pra fazer o gerenciamento das pista de forma eficiente, entretando devido a algumas restrições do enunciado e alguns detalhes não terem ficado muito claros, optei por fazer dessa forma explicada acima (com duas filas principais). Não acho que é a forma mais eficiente, porém se for considerado o número de aviões que devem chegar para 3 pistas, essa maior eficiência não iria ter um impacto tão grande no tempo gasto pelo programa. \newline
+Sobre a eficiência do programa: No enunciado do ep foi pedido pra fazer o gerenciamento das pista de forma eficiente, entretando devido a algumas restrições do enunciado e alguns detalhes não terem ficado muito claros, optei por fazer dessa forma explicada acima (com duas filas principais). Não acho que é a forma mais eficiente, porém se for considerado o número de aviões que devem chegar para 3 pistas, essa maior eficiência não iria ter um impacto tão grande no tempo gasto pelo programa. Além disso, optei por não criar mais classes, porque vi que dava para trabalhar com o que tinha já. (Por exemplo, poderia ter criado uma classe para as pistas, mas preferi usar a classe avião que já havia sido criada).\newline
 
-Sobre a organização do programa: foram feitas classes para os aviões e uma estrutura de fila, embora essa estrutura não seja a tradicional, uma vez que foram necessárias algumas funções auxiliares que não existem numa fila tradicional. Ainda sobre as filas, optei por não usar template, considerando que a fila só foi usada para um tipo conhecido. Sobre a classe dos aviões, optei por deixar os atributos como público. \newline
+Sobre a organização do programa: foram feitas classes para os aviões (na verdade é para representar um voo) e uma estrutura de fila, embora essa estrutura não seja a tradicional, uma vez que foram necessárias algumas funções auxiliares que não existem numa fila tradicional. Ainda sobre as filas, optei por não usar template, considerando que a fila só foi usada para um tipo conhecido. Sobre a classe dos aviões, optei por deixar os atributos como público. \newline
 
 \section*{Formato do input}
+
+O formato considerado para input é de acordo com classe "Plane" (mostrado na figura abaixo).\newline
 
 \begin{lstlisting}[label={list:first},caption= Parte do código em plane.h.]
     class Plane
@@ -137,13 +139,11 @@ Sobre a organização do programa: foram feitas classes para os aviões e uma es
             int track_time;
             int fuel;
             bool landing;
-    
-            bool isLanding(Plane p);
     };
 \end{lstlisting}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+O código abaixo indica como estão sendo lidos os aviões. As parte que não são lidas é porque já tem valor definido (como wating time que inicia com 0 e track time que inicia com 3) \newline
 
 
 \begin{lstlisting}[label={list:first},caption= Parte do código em airport.cpp que lê os aviões (C++).]
@@ -165,5 +165,69 @@ for(k = 0; k < K; k++)
     else normal.push(aux);
 }
 \end{lstlisting}
+
+
+\section*{Formato da saída}
+
+Algum texto aqui.\newline
+
+Além disso, a saída está sendo impressa com um formato específico em 7 partes diferentes  para cada instante de tempo (abaixo está a parte do código de impressão das filas).\newline
+
+1) Imprime as 5 diferentes filas de aviões. Cada fila é impressa de acordo com o código da figura abaixo. \newline
+
+2) Tempo de espera dos aviões que querem pousar (no enunciado está dizendo para imprimir a média, mas optei por imprimir o número total)\newline
+
+3) Tempo de espera dos aviões que querem decolar (no enunciado está dizendo para imprimir a média, mas optei por imprimir o número total)\newline
+
+4) Quantidade de combustível dos aviões em espera. \newline
+
+5) Quantidade de combustível dos aviões que pousaram.\newline
+
+6) Quantidade total de aviões em emergência \newline
+
+7) Informação sobre as pistas: se estão livres ou com qual avião (id) elas estão ocupadas.\newline
+
+\begin{lstlisting}[label={list:first},caption= Parte do código em queue.h que imprime informações dos aviões (C++).]
+    void Queue::printQueue()
+    {
+        string emergencia, pouso;
+        Node * i;
+        i = ini->next;
+        cout << endl;
+        if(n > 0)
+        { 
+            cout << "    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |" << endl;
+            cout << "    +----------+----------------+------------+-----------------+-------------+-----------------+" << endl;
+        }
+        else cout << "     Essa fila nao possui avioes" << endl;
+        while(i != NULL)
+        {
+            if(i->plane.emergency)
+                emergencia = "SIM";
+            else
+                emergencia = "NAO";
+
+            if(i->plane.landing)
+                pouso = "POUSO";
+            else
+                pouso = "DECOLAGEM";
+            
+            cout << "    |  " << i->plane.id << " |      " << i->plane.from_to << "       |    " << emergencia << "     |        " << i->plane.waiting_time << "        |     ";
+            if(i->plane.fuel >= 10) cout << i->plane.fuel << "      | " << pouso << endl;
+            else cout << i->plane.fuel << "       | " << pouso << endl;
+            i = i->next;
+        }
+        cout << endl;
+    }   
+\end{lstlisting}
+
+
+\section*{Exemplo}
+
+
+
+
+
+
 
 \end{document}

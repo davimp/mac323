@@ -161,6 +161,7 @@ int main()
         average_time = normal.totalLandingQueue() + emergencies.totalLandingQueue(); /*average_time /= n;*/
         average_wait = normal.totalTakeoffQueue() + emergencies.totalTakeoffQueue(); /*average_wait /= n;*/
         average_fuel = normal.totalFuelQueue() + emergencies.totalFuelQueue(); /*available_fuel /= n;*/
+        available_fuel = landed.totalFuelQueue();
         /* calcula available_fuel - avioes que ja pousaram*/
         /* calcula emergencies - a */
 
@@ -185,7 +186,7 @@ int main()
         cout << " "  << average_time << endl;
         cout << "3) Tempo de espera dos avioes que querem decolar (neste instante de tempo): ";
         cout << " " << average_wait << endl;
-        cout << "4) Quantidade de combustivel dos aviões em espera: ";
+        cout << "4) Quantidade de combustivel dos aviões em espera para pousar: ";
         cout << " " << average_fuel << endl;
         cout << "5) Quantidade de combustivel disponível dos avioes que pousaram: ";
         cout << " " << available_fuel << endl;
