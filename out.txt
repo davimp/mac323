@@ -1,49 +1,139 @@
-*----------------------------------------------------------*
-TEMPO : 0
-1) Aviões em espera 
+*--------------------------------------------------------------------------------------*
+TEMPO : 0 de 3
+1 aviões entraram em contato
+1) Aviões: 
    1.1) fila geral
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
+
+     Essa fila não possui aviões
+
    1.2) fila de emergencia 
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
-2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  0
-3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade media de combustivel dos aviões em espera:  0
-5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
-*----------------------------------------------------------*
-TEMPO : 1
-1) Aviões em espera 
+7) Pistas :
+   Pista 1 : livre
+   Pista 2 : livre
+   Pista 3 : ASD3456
+*--------------------------------------------------------------------------------------*
+TEMPO : 1 de 3
+2 aviões entraram em contato
+1) Aviões: 
    1.1) fila geral
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
+
+     Essa fila não possui aviões
+
    1.2) fila de emergencia 
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
-2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  0
-3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade media de combustivel dos aviões em espera:  0
-5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
-*----------------------------------------------------------*
-TEMPO : 2
-1) Aviões em espera 
+7) Pistas :
+   Pista 1 : QWE3456
+   Pista 2 : RTY2345
+   Pista 3 : ASD3456
+*--------------------------------------------------------------------------------------*
+TEMPO : 2 de 3
+1 aviões entraram em contato
+1) Aviões: 
    1.1) fila geral
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
+
+     Essa fila não possui aviões
+
    1.2) fila de emergencia 
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
-2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  0
-3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade media de combustivel dos aviões em espera:  0
-5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |  FGH3455 |      FGH       |    SIM     |        0        |     56      | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
-*----------------------------------------------------------*
-TEMPO : 3
-1) Aviões em espera 
+7) Pistas :
+   Pista 1 : QWE3456
+   Pista 2 : RTY2345
+   Pista 3 : ASD3456
+*--------------------------------------------------------------------------------------*
+TEMPO : 3 de 3
+1 aviões entraram em contato
+1) Aviões: 
    1.1) fila geral
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
+
+     Essa fila não possui aviões
+
    1.2) fila de emergencia 
-    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  
-2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo):  0
-3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo):  0
-4) Quantidade media de combustivel dos aviões em espera:  0
-5) Quantidade media de combustivel disponível dos avioes que pousaram:  0
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |  ASD3456 |      ASD       |    SIM     |        0        |     20      | POUSO
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |  FGH3455 |      FGH       |    SIM     |        0        |     56      | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  0
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera:  0
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
 6) Quantidade de avioes em condição de emergência (total):  0
-*----------------------------------------------------------*
+7) Pistas :
+   Pista 1 : QWE3456
+   Pista 2 : RTY2345
+   Pista 3 : ARF2343
+*--------------------------------------------------------------------------------------*

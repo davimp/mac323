@@ -34,7 +34,7 @@ class Queue
         double totalFuelQueue();
 
         Plane specialPop();
-        Plane emergencyPop();
+        Plane toEmergencyPop();
 };
 
 Queue::Queue()
@@ -134,24 +134,18 @@ void Queue::updateQueue()
     }
 }
 
-/*
-         id;
-        string from_to;
-        bool emergency;
-        int estimated_time;
-        int waiting_time;
-/*
-        int track_time;
-        int fuel;
-        bool landing;
-*/
-
 void Queue::printQueue()
 {
     string emergencia, pouso;
     Node * i;
     i = ini->next;
-    cout << "    |  ID  | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM  " << endl;
+    cout << endl;
+    if(n > 0)
+    { 
+        cout << "    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |" << endl;
+        cout << "    +----------+----------------+------------+-----------------+-------------+-----------------+" << endl;
+    }
+    else cout << "     Essa fila não possui aviões" << endl;
     while(i != NULL)
     {
         if(i->plane.emergency)
@@ -164,9 +158,12 @@ void Queue::printQueue()
         else
             pouso = "DECOLAGEM";
         
-        cout << "   " << i->plane.id << " | " << i->plane.from_to << " | " << emergencia << " | " << i->plane.waiting_time << " | " << i->plane.fuel << " | " << pouso;
+        cout << "    |  " << i->plane.id << " |      " << i->plane.from_to << "       |    " << emergencia << "     |        " << i->plane.waiting_time << "        |     ";
+        if(i->plane.fuel >= 10) cout << i->plane.fuel << "      | " << pouso << endl;
+        else cout << i->plane.fuel << "       | " << pouso << endl;
         i = i->next;
     }
+    cout << endl;
 }
 
 double Queue::totalTakeoffQueue()
@@ -251,7 +248,7 @@ Plane Queue::specialPop()
     return aviao;
 }
 
-Plane Queue::emergencyPop()
+Plane Queue::toEmergencyPop()
 {
     /* só irá ser chamada caso a lista não esteja vazia e se for a pista 3 com a fila de emergência vazia */
     Plane aviao;
@@ -260,7 +257,7 @@ Plane Queue::emergencyPop()
 
     aviao.emergency = 0;
 
-    while(p->next != nullptr && (p->next->plane.fuel) && (p->next->plane.waiting_time > 0.1*p->next->plane.estimated_time))
+    while(p->next != nullptr && (p->next->plane.fuel) > 0)
         p = p->next;
     
     if(p->next != nullptr)

@@ -27,9 +27,9 @@ Queue fail;
 int main()
 {
     int i;
-    track3.track_time = 0;
-    track2.track_time = 0;
-    track1.track_time = 0;
+    track3.track_time = 0; track3.estimated_time = -1;
+    track2.track_time = 0; track2.estimated_time = -1;
+    track1.track_time = 0; track1.estimated_time = -1;
 
     cin >> T;
 
@@ -51,17 +51,17 @@ int main()
 
             Plane aux {t_id, t_from_to, t_landing, t_emergency, t_fuel, t_estimated_time};
             
-            if(aux.emergency) emergencies.push(aux);
+            if(t_emergency) emergencies.push(aux);
             else normal.push(aux);
         }
 
 
-        /* controle das pistas */
+        /* -------------------- controle das pistas ---------------------- */
 
         /* pista 3 - para casos normais, só pode ser usada para decolagem*/
         if(track3.track_time <= 0)
         {
-            if(t > 0)
+            if(track3.estimated_time > 0)
             {
                 if(track3.landing)
                 {
@@ -71,7 +71,7 @@ int main()
                 {
                     departed.push(track3);
                 }
-                
+                track3.estimated_time = -1;
             }
 
             /* put on landings or departures queue*/
@@ -88,7 +88,7 @@ int main()
         /* pista 1 */
         if(track1.track_time <= 0)
         {
-            if(t > 0)
+            if(track1.estimated_time > 0)
             {
                 if(track2.landing)
                 {
@@ -98,7 +98,7 @@ int main()
                 {
                     departed.push(track1);
                 }
-                
+                track1.estimated_time = -1;
             }
 
             /* put on landings or departures queue*/
@@ -117,7 +117,7 @@ int main()
         {
             /* put on landings or departures queue*/
 
-            if(t > 0)
+            if(track2.estimated_time > 0)
             {
                 if(track2.landing)
                 {
@@ -127,7 +127,7 @@ int main()
                 {
                     departed.push(track2);
                 }
-                
+                track2.estimated_time = -1;
             }
 
             if(!emergencies.empty())
@@ -140,7 +140,9 @@ int main()
             }
         }
 
-        /* vê se tem algum avião que tem que ser mandado embora */
+        /* ----------------- fim: controle das pistas ---------------------- */
+
+        /* vê se tem algum avião que tem que ser mandado embora, isto é, aqueles que ainda estão na fila de emergencia */
         while(!emergencies.empty())
         {
             Plane aux;
@@ -150,27 +152,12 @@ int main()
 
         /*atualiza*/
         normal.updateQueue();
-        emergencies.updateQueue();
         track1.track_time--;
         track2.track_time--;
         track3.track_time--;
 
-        /* checa na fila normal se tem algum aviao que deve ser mandado para a fila de emergencia */
-
-        Plane aux;
-
-        aux = normal.emergencyPop();
-        while(aux.emergency)
-        {
-            emergencies.push(aux);
-            aux = normal.emergencyPop();
-        }
-        
-        /* ... */
 
         /* coleta dados */
-        n = normal.size();
-        if(n == 0) n = 1; /* para não occorer divisão por zero mais na frente */ 
 
         average_time = normal.totalLandingQueue() + emergencies.totalLandingQueue(); /*average_time /= n;*/
         average_wait = normal.totalTakeoffQueue() + emergencies.totalTakeoffQueue(); /*average_wait /= n;*/
@@ -180,30 +167,54 @@ int main()
 
 
         /* imprime dados */
-        cout << "*----------------------------------------------------------*" << endl;
-        cout << "TEMPO : " << t << endl;
-        cout << "1) Aviões em espera " << endl;
+        cout << "*--------------------------------------------------------------------------------------*" << endl;
+        cout << "TEMPO : " << t << " de " << T-1 << endl;
+        cout << K << " aviões entraram em contato" << endl;
+
+        cout << "1) Aviões: " << endl;
         cout << "   1.1) fila geral" << endl;
         normal.printQueue();
         cout << "   1.2) fila de emergencia " << endl;
         emergencies.printQueue();
-        cout << "2) Tempo medio de espera dos avioes que querem pousar (neste instante de tempo): ";
-        cout << " "  << average_time/n << endl;
-        cout << "3) Tempo medio de espera dos avioes que querem decolar (neste instante de tempo): ";
-        cout << " " << average_wait/n << endl;
-        cout << "4) Quantidade media de combustivel dos aviões em espera: ";
-        cout << " " << average_fuel/n << endl;
-        cout << "5) Quantidade media de combustivel disponível dos avioes que pousaram: ";
+        cout << "   1.3) aviões que pousaram " << endl;
+        landed.printQueue();
+        cout << "   1.4) aviões que decolaram " << endl;
+        departed.printQueue();
+        cout << "   1.5) aviões que deram erro " << endl;
+        fail.printQueue();
+        cout << "2) Tempo de espera dos avioes que querem pousar (neste instante de tempo): ";
+        cout << " "  << average_time << endl;
+        cout << "3) Tempo de espera dos avioes que querem decolar (neste instante de tempo): ";
+        cout << " " << average_wait << endl;
+        cout << "4) Quantidade de combustivel dos aviões em espera: ";
+        cout << " " << average_fuel << endl;
+        cout << "5) Quantidade de combustivel disponível dos avioes que pousaram: ";
         cout << " " << available_fuel << endl;
         cout << "6) Quantidade de avioes em condição de emergência (total): ";
         cout << " " << emergencies.size() << endl;
-        
+        cout << "7) Pistas :" << endl;
 
+        if(track1.estimated_time > 0) cout << "   Pista 1 : " << track1.id << endl;
+        else cout << "   Pista 1 : livre" << endl;
 
-        /* atualiza o tempo e os atributos dos avioes (fazer função que acessa a lista e já faz isso ?? */
+        if(track2.estimated_time > 0) cout << "   Pista 2 : " << track2.id << endl;
+        else cout << "   Pista 2 : livre" << endl;
 
+        if(track3.estimated_time > 0) cout << "   Pista 3 : " << track3.id << endl;
+        else cout << "   Pista 3 : livre" << endl;
+
+        /* checa na fila normal se tem algum aviao que deve ser mandado para a fila de emergencia */
+
+        Plane aux;
+
+        aux = normal.toEmergencyPop();
+        while(aux.emergency)
+        {
+            emergencies.push(aux);
+            aux = normal.toEmergencyPop();
+        }
 
     }
-    cout << "*----------------------------------------------------------*" << endl;
+    cout << "*--------------------------------------------------------------------------------------*" << endl;
 
 }
