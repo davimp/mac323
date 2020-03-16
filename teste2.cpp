@@ -38,7 +38,6 @@ int main()
         cin >> K;
         for(k = 0; k < K; k++)
         {
-            /*(string t_id, string t_from_to, bool t_landing, int t_fuel, int t_estimated_time)*/
             /* lê os k aviões e coloca eles na fila*/
             cin >> t_id;
             cin >> t_from_to;
