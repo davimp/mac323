@@ -4,49 +4,79 @@
 
 const int TAM = 1000;
 
+typedef struct node Node;
+struct node
+{
+    Plane plane;
+    Node * next;
+};
 
 class Queue
 {
     private:
-        Plane * q;
-        int ini;
+        Node * ini;
         int n;
 
     public:
         Queue();
         ~Queue();
-        void push(Plane plane);
+        void push(Plane aviao);
         Plane pop();
         bool empty();
         int size();
         Plane front();
-        Plane back();
-        /* outras funcoes que nao sao proprias da estrutura de dados fila*/
+        /* outras funcoes que nao sao proprias da estrutura de dados fila */
 
         void updateQueue();
         void printQueue();
-        double averageTakeoffQueue();
-        double averageLandingQueue();
-        double averageFuelQueue();
+        double totalTakeoffQueue();
+        double totalLandingQueue();
+        double totalFuelQueue();
+
+        Plane specialPop();
+        Plane toEmergencyPop();
 };
 
-Queue::Queue(): ini(0), n(0), q(new Plane[TAM]) {};
+Queue::Queue()
+{
+    Plane aux;
+
+    ini = new Node;
+    ini->plane = aux;
+    ini->next = NULL;
+
+    n = 0;
+}
 
 Queue::~Queue()
 {
-    if(q != NULL)
-        delete [] q;
+    Node * aux;
+    aux = ini->next;
+    while(aux != NULL)
+    {
+        ini->next = aux->next;
+        delete aux;
+        aux = ini->next;
+    }
+    delete ini;
+    n = 0;
 }
 
 Plane Queue::pop()
 {
     if(n > 0)
     {
-        Plane aux;
-        aux = q[ini];
         n--;
-        ini++; ini %= TAM;
-        return aux;
+        Plane aviao;
+        Node * aux;
+
+        aux = ini->next;
+        ini->next = ini->next->next;
+
+        aviao = aux->plane;
+        delete aux;
+
+        return aviao;
     }
 }
 
@@ -60,21 +90,30 @@ int Queue::size()
     return n;
 }
 
-Plane Queue::back()
-{
-    if(n > 0)
-        return q[(ini + n - 1)%TAM];
-}
-
 Plane Queue::front()
 {
     if(n > 0)
-        return q[ini];
+    {
+        Plane aviao;
+
+        aviao = ini->next->plane;
+
+        return aviao;
+    }
 }
 
-void Queue::push(Plane plane)
+void Queue::push(Plane aviao)
 {
-    q[(ini + n)%TAM] = plane;
+    Node * i;
+
+    i = ini;
+    while(i->next != NULL) i = i->next;
+
+    i->next = new Node;
+    i = i->next;
+    i->plane = aviao;
+    i->next = NULL;
+
     n++;
 }
 
@@ -84,76 +123,154 @@ void Queue::push(Plane plane)
 
 void Queue::updateQueue()
 {   
-    int i;
-    for(i = ini; i < ini + n; i++)
+    Node * i;
+    i = ini->next;
+    while(i != NULL)
     {
-       /* aprende a codar */   
+        if(i->plane.landing) (i->plane.fuel) -= 1;
+        (i->plane.waiting_time) += 1;
+
+        i = i->next;
     }
 }
 
 void Queue::printQueue()
 {
-    int i;
-    for(i = ini; i < ini + n; i++)
-        cout << q[i].id << endl;
+    string emergencia, pouso;
+    Node * i;
+    i = ini->next;
+    cout << endl;
+    if(n > 0)
+    { 
+        cout << "    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |" << endl;
+        cout << "    +----------+----------------+------------+-----------------+-------------+-----------------+" << endl;
+    }
+    else cout << "     Essa fila não possui aviões" << endl;
+    while(i != NULL)
+    {
+        if(i->plane.emergency)
+            emergencia = "SIM";
+        else
+            emergencia = "NÃO";
+
+        if(i->plane.landing)
+            pouso = "POUSO";
+        else
+            pouso = "DECOLAGEM";
+        
+        cout << "    |   " << i->plane.id << "  |      " << i->plane.from_to << "       |    " << emergencia << "     |        " << i->plane.waiting_time << "        |     ";
+        if(i->plane.fuel >= 10) cout << i->plane.fuel << "      | " << pouso << endl;
+        else cout << i->plane.fuel << "       | " << pouso << endl;
+        i = i->next;
+    }
+    cout << endl;
 }
 
-double Queue::averageTakeoffQueue()
+double Queue::totalTakeoffQueue()
 {
-    int i, cnt;
-    double average;
-    average = 0;
-    cnt = 0;
-    for(i = ini; i < ini + n; i++)
-        if(!q[i].landing)
-        {
-            cnt++;
-            average += q[i].waiting_time;
+    if(n == 0) return 0;
+    Node * i;
+    double total;
+    total = 0;
+    i = ini->next;
+
+    while(i != NULL)
+    {
+        if(!(i->plane.landing))
+        { 
+            total += i->plane.waiting_time;
         }
+        i = i->next;
+    }
+
+    return total;
+}
+
+double Queue::totalLandingQueue()
+{
+    if(n == 0) return 0;
+    Node * i;
+    double total;
+    total = 0;
+    i = ini->next;
+
+    while(i != NULL)
+    {
+        if((i->plane.landing))
+        { 
+            total += i->plane.waiting_time;
+        }
+        i = i->next;
+    }
+
+    return total;
+}
+
+double Queue::totalFuelQueue()
+{
+    if(n == 0) return 0;
+    Node * i;
+    double total;
+    total = 0;
+    i = ini->next;
+
+    while(i != NULL)
+    {
+        if((i->plane.landing))
+        { 
+            total += i->plane.fuel;
+        }
+        i = i->next;
+    }
+
+    return total;
+}
+
+Plane Queue::specialPop()
+{
+    /* só irá ser chamada caso a lista não esteja vazia e se for a pista 3 com a fila de emergência vazia */
+    Plane aviao;
+    Node * aux, * p;
+    p = ini;
+
+    while(p->next != nullptr && (p->next->plane.landing))
+        p = p->next;
     
-    if(cnt != 0) average /= cnt;
+    if(p->next != nullptr)
+    {
+        aux = p->next;
+        p->next = aux->next;
+        aviao = aux->plane;
+        delete aux;
+        n--;
+    }
 
-    return average;
+    return aviao;
 }
 
-double Queue::averageLandingQueue()
+Plane Queue::toEmergencyPop()
 {
-    int i, cnt;
-    double average;
-    average = 0;
-    cnt = 0;
-    for(i = ini; i < ini + n; i++)
-        if(q[i].landing)
-        {
-            cnt++;
-            average += q[i].waiting_time;
-        }
+    /* só irá ser chamada caso a lista não esteja vazia e se for a pista 3 com a fila de emergência vazia */
+    Plane aviao;
+    Node * aux, * p;
+    p = ini;
+
+    aviao.emergency = 0;
+
+    while(p->next != nullptr && (p->next->plane.fuel) > 0)
+        p = p->next;
     
-    if(cnt != 0) average /= cnt;
+    if(p->next != nullptr)
+    {
+        aux = p->next;
+        p->next = aux->next;
+        aviao = aux->plane;
+        aviao.emergency = 1;
+        delete aux;
+        n--;
+    }
 
-    return average;
+    return aviao;
 }
-
-double Queue::averageFuelQueue()
-{
-    int i, cnt;
-    double average;
-    average = 0;
-    cnt = 0;
-    for(i = ini; i < ini + n; i++)
-        if(q[i].landing)
-        {
-            cnt++;
-            average += q[i].fuel;
-        }
-
-
-    if(cnt != 0) average /= cnt;
-
-    return average;
-}
-
-
-
 
 #endif

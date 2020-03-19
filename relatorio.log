@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,21 +807,111 @@ Overfull \hbox (199.87341pt too wide) in paragraph at lines 200--201
 [][][][] 
  []
 
-[4] [5] (/home/davi/eps/mac323/relatorio.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 233--266
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 275--305
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 314--452
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+[5] (/home/davi/eps/mac323/relatorio.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15959 strings out of 492615
- 293587 string characters out of 6131390
+ 15983 strings out of 492615
+ 293858 string characters out of 6131390
  629984 words of memory out of 5000000
- 19547 multiletter control sequences out of 15000+600000
- 26510 words of font info for 36 fonts, out of 8000000 for 9000
+ 19564 multiletter control sequences out of 15000+600000
+ 30858 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,58p,783b,1729s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-01.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/droid/DroidSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on /home/davi/eps/mac323/relatorio.pdf (5 pages, 85310 bytes).
+Output written on /home/davi/eps/mac323/relatorio.pdf (5 pages, 87721 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream

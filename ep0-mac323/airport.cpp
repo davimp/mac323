@@ -1,4 +1,4 @@
-#include "queue2.h"
+#include "queue.h"
 using namespace std;
 int T; /* unidades de tempo */
 int K; /* quantidade de avioes que estão entrando em contato com a torre no dado instante de tempo */

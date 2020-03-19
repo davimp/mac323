@@ -24,8 +24,6 @@ class Plane
         int track_time;
         int fuel;
         bool landing;
-
-        void printPlane();
 };
 
 Plane::Plane()
@@ -49,16 +47,6 @@ Plane::Plane(string t_id, string t_from_to, bool t_landing, bool t_emergency, in
     this->estimated_time = t_estimated_time;
     this->waiting_time = 0; /*sempre comeca com  0*/
     this->track_time = 3; /*sempre comeca com 3*/ 
-}
-
-void Plane::printPlane()
-{
-    cout << this->id << endl;
-    cout << this->from_to << endl;
-    cout << this->landing << endl;
-    cout << this->emergency << endl;
-    cout << this->fuel << endl;
-    cout << this->estimated_time << endl;
 }
 
 
