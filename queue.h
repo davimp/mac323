@@ -142,8 +142,8 @@ void Queue::printQueue()
     cout << endl;
     if(n > 0)
     { 
-        cout << "    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |" << endl;
-        cout << "    +----------+----------------+------------+-----------------+-------------+-----------------+" << endl;
+        cout << "    |     ID     | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |" << endl;
+        cout << "    +------------+----------------+------------+-----------------+-------------+-----------------+" << endl;
     }
     else cout << "     Essa fila não possui aviões" << endl;
     while(i != NULL)

@@ -1,0 +1,195 @@
+\documentclass{article}
+
+%All LaTeX documents have a ``preamble'' that includes the packages and macros needed to make the document compile. The file `PomonaLgcsFormatting.tex' includes the preamble for this template. You can see it in the file list on the left frame of your screen, and this document is instructed to use it with the \input{} command below.
+
+\input{PomonaLgcsFormatting}
+
+\title{Relatório do EP1 - MAC323}
+\author{Davi de Menezes Pereira}
+\date{NUSP: 11221988} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Here is where you write the abstract of the paper.
+
+\end{abstract}
+
+\section{Introdução}
+
+\begin{itemize}
+  \space O Exercício Programa 1 teve como objetivo a implementação de uma tabela de 
+símbolos através de 9 tipos diferentes de estruturas de dados: 
+\end{itemize}
+    
+\begin{itemize}
+
+\item Vetor Desordenado;
+\item Vetor Ordenado;
+\item Lista Desordenada;
+\item Lista Ordenada;
+\item Hashing Table;
+\item Árvore Binária de Busca;
+\item Treap;
+\item Árvore Rubro Negra;
+\item Árvore 2-3.
+
+\end{itemize}
+
+\begin{itemize}
+Foi utilizado o template disponibilizado pelos monitores com algumas alterações, como a troca do tipo String da linguagem C pelo std::string do C++, e outras alterações que são consequências dessa primeira.
+\end{itemize}
+\begin{itemize}
+E o programa foi executado com e sem o valgrind, pois o uso do valgrind estava alterando consideravelmente o desempenho do programa.
+\end{itemize}
+\begin{itemize}
+Foram feitos testes com três arquivos diferentes que foram enviados junto com o ep: pequeno.txt (6600 palavras); medio.txt (24595 palavras); grande.txt (58803 palavras).
+
+\end{itemize}
+
+\section{Testes}
+
+\subsection{Vetor Desordenado}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.109017 segundos & 0.004551 segundos \\
+\hline
+medio.txt & 11.5455 segundos & 0.470834 segundos \\
+\hline
+grande.txt & 82.0605 segundos & 3.29548 segundos\\
+\hline
+\end{tabular}
+
+\subsection{Vetor Ordenado}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.143143 segundos & 0.005618 segundos \\
+\hline
+medio.txt & 27.4442 segundos & 0.89261 segundos \\
+\hline
+grande.txt & 223.853 segundos & 7.77717 segundos\\
+\hline
+\end{tabular}
+
+\subsection{Lista Desordenada}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.122917 segundos & 0.016996 segundos \\
+\hline
+medio.txt & 13.0796 segundos & 0.539988 segundos \\
+\hline
+grande.txt & 109.34 segundos & 3.88016 segundos \\
+\hline
+\end{tabular}
+
+
+\subsection{Lista Ordenada}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.120277 segundos & 0.004735 segundos \\
+\hline
+medio.txt & 18.3268 segundos &  0.795164 segundos\\
+\hline
+grande.txt & 166.74 segundos &  7.65423 segundos\\
+\hline
+\end{tabular}
+
+
+\subsection{Hashing Table}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.074507 segundos & 0.004046 segundos \\
+\hline
+medio.txt & 0.216747 segundos & 0.009357 segundos \\
+\hline
+grande.txt & 0.519409 segundos & 0.019262 segundos \\
+\hline
+\end{tabular}
+
+
+\subsection{Arvore Binária de Busca}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.07615 segundos & 0.003689 segundos \\
+\hline
+medio.txt & 0.444332 segundos & 0.016595 segundos \\
+\hline
+grande.txt & 1.06766 segundos & 0.071775 segundos \\
+\hline
+\end{tabular}
+
+
+\subsection{Treap}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.081706 segundos & 0.012171 segundos\\
+\hline
+medio.txt & 0.528111 segundos &  0.048885 segundos\\
+\hline
+grande.txt & 1.26369 segundos & 0.078253 segundos \\
+\hline
+\end{tabular}
+
+\subsection{Árvore Rubro Negra}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.070418 segundos & 0.003083 segundos \\
+\hline
+medio.txt & 0.345865 segundos & 0.015261 segundos \\
+\hline
+grande.txt & 0.953616 segundos & 0.039564 segundos \\
+\hline
+\end{tabular}
+
+\subsection{Árvore 2-3}
+
+\label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Arquivo texto} & \textbf{Tempo de construção com valgrind} & \textbf{Tempo de construção sem valgrind} \\
+\hline\hline
+pequeno.txt & 0.117152 segundos & 0.003184 segundos \\
+\hline
+medio.txt & 0.430088 segundos & 0.045308 segundos \\
+\hline
+grande.txt & 1.15339 segundos & 0.042458 segundos\\
+\hline
+\end{tabular}
+
+
+\end{document}

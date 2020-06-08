@@ -143,3 +143,17 @@ TEMPO : 3 de 3
    Pista 2 : LA734
    Pista 3 : livre
 *--------------------------------------------------------------------------------------*
+
+cp airport ./ep0-mac323/
+cp airport.cpp ./ep0-mac323/
+cp queue.cpp ./ep0-mac323/
+cp queue.h ./ep0-mac323/
+cp plane.h ./ep0-mac323/
+cp relatorio.pdf ./ep0-mac323/
+cp in.txt ./ep0-mac323/
+ 1007  cp out.txt ./ep0-mac323/
+ 1008  cp out2.txt ./ep0-mac323/
+ 1009  cp out3.txt ./ep0-mac323/
+ 1010  cp in2.txt ./ep0-mac323/
+ 1011  cp in3.txt ./ep0-mac323/
+

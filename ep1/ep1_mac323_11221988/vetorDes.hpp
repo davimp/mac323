@@ -54,7 +54,6 @@ vetorDes<Chave, Item>::vetorDes(std::string texto)
         aux = devolve(str);
         insere(str, aux+1);
     }
-
     arquivo.close();
 }
 

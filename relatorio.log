@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.16)  26 APR 2020 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -612,6 +612,9 @@ LaTeX Warning: Label `list:first' multiply defined.
 
 LaTeX Warning: Label `list:first' multiply defined.
 
+
+LaTeX Warning: Label `list:first' multiply defined.
+
 )
 \openout1 = `relatorio.aux'.
 
@@ -753,58 +756,73 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 122.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 [3]
-Overfull \hbox (199.87341pt too wide) in paragraph at lines 200--201
+Overfull \hbox (199.87341pt too wide) in paragraph at lines 195--196
 [][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
  []
 
 
@@ -812,23 +830,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 233--266
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 229--262
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--266
+Underfull \hbox (badness 10000) in paragraph at lines 229--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
@@ -843,27 +861,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 275--305
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 271--301
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--305
+Underfull \hbox (badness 10000) in paragraph at lines 271--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
@@ -873,48 +886,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 314--452
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 310--448
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--452
+Underfull \hbox (badness 10000) in paragraph at lines 310--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
-[5] (/home/davi/eps/mac323/relatorio.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+[7] (/home/davi/eps/mac323/relatorio.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15983 strings out of 492615
- 293858 string characters out of 6131390
+ 16006 strings out of 492615
+ 294145 string characters out of 6131390
  629984 words of memory out of 5000000
- 19564 multiletter control sequences out of 15000+600000
+ 19587 multiletter control sequences out of 15000+600000
  30858 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,58p,783b,1729s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-01.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/droid/DroidSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on /home/davi/eps/mac323/relatorio.pdf (5 pages, 87721 bytes).
+ 55i,12n,58p,783b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-03.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-01.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/droid/DroidSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on /home/davi/eps/mac323/relatorio.pdf (7 pages, 92120 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

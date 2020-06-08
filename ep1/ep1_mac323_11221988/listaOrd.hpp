@@ -3,28 +3,29 @@
 #include <cstdlib>
 #include <string>
 #include <time.h>
-#ifndef LD_H
-#define LD_H
+#ifndef LO_H
+#define LO_H
 
 
-/***************** Lista Desordenada **************************/
-struct celulaDes
+/***************** Lista Ordenada **************************/
+struct celulaOrd
 {
     std::string chave;
     int valor;
-    struct celulaDes * prox;
+    struct celulaOrd * prox;
 };
-typedef struct celulaDes CelulaDes;
+typedef struct celulaOrd CelulaOrd;
 
 template<class Chave, class Item>
-class listaDes
+class listaOrd
 {
     private:
-    CelulaDes * ini;
+    CelulaOrd * ini;
+    int n;
 
     public:
-    listaDes(std::string texto); /* construtor */
-    ~listaDes();/* destrutor */
+    listaOrd(std::string texto); /* construtor */
+    ~listaOrd();/* destrutor */
 
     void insere(Chave chave, Item valor);
     Item devolve(Chave chave);/*devolve o valor*/
@@ -34,14 +35,15 @@ class listaDes
 };
 
 template <class Chave, class Item>
-listaDes<Chave, Item>::listaDes(std::string texto)
+listaOrd<Chave, Item>::listaOrd(std::string texto)
 {
     std::fstream arquivo;
     std::string str;
     int aux = 0;
-    ini = new CelulaDes;
+    ini = new CelulaOrd;
     ini->chave = "";
     ini->valor = 0;
+    ini->prox = nullptr;
     arquivo.open(texto);
 
     if (arquivo.fail()) {
@@ -57,9 +59,10 @@ listaDes<Chave, Item>::listaDes(std::string texto)
 }
 
 template<class Chave, class Item>
-listaDes<Chave, Item>::~listaDes()
+listaOrd<Chave, Item>::~listaOrd()
 {
-    CelulaDes * aux;
+    CelulaOrd * aux;
+    aux = ini->prox;
     while(ini->prox != nullptr){
         aux = ini->prox;
         ini->prox = aux->prox;
@@ -69,32 +72,35 @@ listaDes<Chave, Item>::~listaDes()
 }
 
 template <class Chave, class Item> 
-void listaDes<Chave, Item>::insere(Chave chave, Item valor)
+void listaOrd<Chave, Item>::insere(Chave chave, Item valor)
 {
-    CelulaDes * i;
-    CelulaDes * aux;
+    CelulaOrd *i, * q;
     i = ini;
-    while(i->prox != nullptr && i->chave != chave) 
+    q = ini;
+    while(i->prox != nullptr && i->prox->chave <= chave){
         i = i->prox;
+    }
 
     if(i->chave == chave){
         i->valor = valor;
     }
     else{
-        aux = new CelulaDes;
-        aux->chave = chave;
-        aux->valor = valor;
-        i->prox = aux;
+       q = new CelulaOrd;
+       q->chave = chave;
+       q->valor = valor;
+       q->prox = i->prox;
+       i->prox = q;
     }
 }
 
 template<class Chave, class Item>
-Item listaDes<Chave, Item>::devolve(Chave chave)
+Item listaOrd<Chave, Item>::devolve(Chave chave)
 {
-    CelulaDes * i;
+    CelulaOrd * i;
+    i = ini;
     for(i = ini->prox; i != nullptr; i = i->prox)
     {   
-        if(i->chave == chave)
+        if(i->chave >= chave)
             break;
     }
     if(i == nullptr || i->chave != chave) return 0;
@@ -102,9 +108,9 @@ Item listaDes<Chave, Item>::devolve(Chave chave)
 }
 
 template<class Chave, class Item>
-void listaDes<Chave, Item>::remove(Chave chave)
+void listaOrd<Chave, Item>::remove(Chave chave)
 {
-    CelulaDes *i,  *p;
+    CelulaOrd *i,  *p;
     p = ini;
     i = ini->prox;
     while(i->chave != chave && i->prox != nullptr){
@@ -118,29 +124,36 @@ void listaDes<Chave, Item>::remove(Chave chave)
 }
 
 template<class Chave, class Item>
-int listaDes<Chave, Item>::rank(Chave chave)
+int listaOrd<Chave, Item>::rank(Chave chave)
 {
-    CelulaDes *i;
+    CelulaOrd *i;
     int ans;
     ans = 0;
     i = ini->prox;
     while(i != nullptr){
         if(i->chave < chave) ans++;
+        else break;
         i = i->prox;
     }
     return ans;
 }
 
 template<class Chave, class Item>
-Chave listaDes<Chave, Item>::seleciona(int k)
+Chave listaOrd<Chave, Item>::seleciona(int k)
 {
-    CelulaDes *i;
+    CelulaOrd *i;
+    int r;
+    r = 0;
     i = ini->prox;
+
     while(i != nullptr){
-        if(rank(i->chave) == k) break;
+        if(r == k) break;
         i = i->prox;
+        r++;
     }
-    return i->chave;
+
+    if(i != nullptr) return i->chave;
+    return "";
 }
 
 

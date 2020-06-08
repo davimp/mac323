@@ -1,0 +1,122 @@
+\documentclass{article}
+
+%All LaTeX documents have a ``preamble'' that includes the packages and macros needed to make the document compile. The file `PomonaLgcsFormatting.tex' includes the preamble for this template. You can see it in the file list on the left frame of your screen, and this document is instructed to use it with the \input{} command below.
+
+\input{PomonaLgcsFormatting}
+
+\title{Pomona Linguistics \LaTeX{} Paper Template: Replace this with your title}
+\author{Your Name Here}
+\date{\today} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Here is where you write the abstract of the paper.
+
+\end{abstract}
+
+\section{Introduction}
+
+\begin{itemize}
+
+\item \href{https://www.overleaf.com/latex/templates/pomona-linguistics-latex-template/bvdxdtpwysnd}{This paper template} has been designed to simplify the \LaTeX{}-learning process for Pomona Linguistics students wanting to use it to write papers/assignments. By clicking on the "\href{https://www.overleaf.com/latex/templates/pomona-linguistics-latex-template/bvdxdtpwysnd}{open as template}" link that brought you here, you now own this Overleaf project and can replace the text in this document with your own paper.\footnote{This also means you will probably want to rename the project - you can do this by hovering your cursor over the title ``Pomona Linguistics LaTeX Template' at the top of this page, and then clicking on the pencil icon that appears to the right of the title. You can also rename the PomLingTemplate.tex file in the leftmost panel by clicking on the down arrow.} If you managed to find this as a PDF, you can find the template on Overleaf. 
+
+\item This template uses the set of packages and commands that are in the LgcsFormatting.tex document that you can see in the file list to the left of your screen. We don't explain here the full range of things you can do with this template: for that, please see our \href{https://www.overleaf.com/latex/templates/pomona-linguistics-quick-reference-guide/jthrqbrktmrd}{Pomona Linguistics Quick Reference Guide}.
+
+\end{itemize}
+
+\section{Some Basics of \LaTeX{}}
+
+\subsection{Useful commands for text formatting, some that we built for you}
+
+\ea 
+	\begin{tabular}[t]{l l l}
+		\toprule
+		\textbf{Symbol/Annotation} & \textbf{Example} & \textbf{Code} \\ \midrule
+		Ellipsis & \dots & \verb|\dots| \\
+		Subscript & NP\subs{i} & \verb|NP\subs{i}| \\
+		Superscript & NP\supers{i} & \verb|NP\supers{i}|\\ 
+		Bold & \textbf{bold} & \verb|\textbf{bold}| \\
+		Italic & \textit{italic} & \verb|\textit{italic}| \\
+		Small Caps & \textsc{small caps} & \verb|\textsc{small caps}| \\
+		Strikeout & \sout{strikeout} & \verb|\sout{strikeout}| \\
+		Underline & \underline{underline} & \verb|\underline{underline}| \\
+		circle something in text & \circled{something} & \verb|\circled{something}| \\
+		Highlight something & \hl{something} & \verb|\hl{something}| \\
+		Null & \nothing  & \verb|\nothing|\\
+		Theta & \texttheta & \verb|\texttheta|  \\
+		Phi & \ph & \verb|\ph| \\
+		Hash & \# & \verb|\#| \\
+		Label a left bracket & \Lb{VP} kick it ] & \verb|\Lb{VP}|\\
+		Label a right bracket & [[kick\Rb{rt}ed\Rb{wd} & \verb|\Rb{rt},\Rb{wd}|\\
+		Trace with index & \tr{k}  & \verb|\tr{k}| \\
+		Bar-level node & X\1 & \verb|X\1| \\
+		Head Node & X\0 & \verb|X\0| \\
+		\bottomrule
+	\end{tabular}
+\z
+
+\newpage 
+
+\begin{itemize}
+
+\item If you want to make a bulleted list, look at how this list is formatted in the .tex document with the ``itemize'' environment.
+
+\item As you've already seen if you are paying attention to the .tex document on the left of your screen, sections, subsections, and sub-subsection are formatted with the commands \verb|\section{}|, \verb|\subsection{}|, and \verb|\subsubsection{}|, respectively.
+
+\item Look at the .tex document to see how we bolded \textbf{this text} (and Overleaf has a shortcut to make it easy, Cmd-B on Macs, Ctrl-B on PCs). \textit{Similarly for italics}, Overleaf provides a shortcut (Cmd-I on Macs, Ctrl-I on PCs).
+
+\item Write footnotes like this.\footnote{Hey, I'm a footnote.}
+
+\end{itemize}
+
+\subsection{Numbered examples}
+
+\ea 
+Numbered examples look like this.
+\z 
+
+\noindent Interlinear glossing can be seen in (\ref{BukusuNegation}), which also illustrates cross-references as well.
+
+\ea \label{BukusuNegation}
+\gll Peter se-a-la-ba a-kula sitabu ta. \hspace{2 in}  \textbf{Lubukusu} \\
+Peter NEG-SA-TNS-be SA-buy book NEG \\
+\glt `Peter will not be buying a book.'
+\z
+
+%See the Quick Reference Guide for more detailed instructions on numbered examples, interlinear glossing, and cross-references
+
+\subsection{Tables}
+
+A table is illustrated in (\ref{SampleTable}), though tables can be formatted in many ways (see the Quick Reference Guide).
+
+\ea \label{SampleTable}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+\textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
+\hline\hline
+cell 1 & cell 2 & cell 3 \\
+\hline
+cell 4 & cell 5 & cell 6 \\
+\hline
+cell 7 & cell 8 & cell 9 \\
+\hline
+\end{tabular}
+
+\z 
+
+\section{Where to go to learn more}
+
+\begin{itemize}
+    \item Pedro Martins has already written a tutorial specifically for linguists that also happens to be the best beginner-oriented \LaTeX{} tutorial that we have ever found. You can find it here: \url{http://ptmartins.info/latex/}.
+    \item Our \href{https://www.overleaf.com/latex/templates/pomona-linguistics-quick-reference-guide/jthrqbrktmrd}{Quick Reference Guide} includes detailed instructions for how to format things for phonology (e.g. SPE rules, derivations, tableaux, etc) as well as for syntax (e.g. trees, interlinear glosses), as well as additional details about general \LaTeX{} formatting. It should have every kind of formatting you need to write a Pomona Linguistics paper.
+    \item Michael Diercks aggregates \LaTeX{} resources useful for LGCS students on \href{http://pages.pomona.edu/~mjd14747/tex.html}{his website}.
+
+\end{itemize}
+
+
+\end{document}
+

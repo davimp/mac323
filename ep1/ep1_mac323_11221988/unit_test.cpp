@@ -204,22 +204,27 @@ void
 testeOperacoes(ST st)
 {
     string linha;
-    
+    string operacao;
+    clock_t start, end;
+    double elapsed;
     /* mostre uso */
     cout << "Possiveis operacoes do teste interativo:\n";
     cout << "minST, delminST, getST <chave>; rankST <chave>, deleteST <chave>, selectST <int>\n";
     cout << "CRTL-D para encerrar.\n";
     PROMPT;
-    while (cin >> linha) {
-        /* pegue operacao a ser testada */
-        string operacao;
-        cin >> operacao;
+    /* pegue operacao a ser testada */
+    while (cin >> operacao) {
         if (operacao == "") {
              ERROR(operacao esperada);
         }
         /*---------------------------------*/
         else if (operacao == MIN_ST) {
+            start = clock();
             string key = st->seleciona(0);
+            end = clock();
+
+            elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+            cout << "Operação durou " << elapsed << "segundos.\n";
             if (key == "") {
                 cout << "ST vazia\n";
             } else {
@@ -228,13 +233,17 @@ testeOperacoes(ST st)
         }
         /*---------------------------------*/
         else if (operacao == DELMIN_ST) {
+            start = clock();
             string key = st->seleciona(0);
+            end = clock();
             if (key == "") {
                 cout << "ST já está vazia\n";
             } else {
                 st->remove(key);
                 cout << "\"" << key << "\" foi removida\n";
             }
+            elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+            cout << "Operação durou " << elapsed << "segundos.\n";
         }
         /*---------------------------------*/
         else {
@@ -248,36 +257,50 @@ testeOperacoes(ST st)
                 /*---------------------------------*/
                 if (operacao == GET_ST) {
                     int frequencia = 0;
+                    start = clock();
                     frequencia = st->devolve(key); /* consulte a ST */
+                    end = clock();
                     /* mostre o resultado da consulta */
                     if (frequencia == 0) {
                         cout << key << ": 0\n";
                     } else {
                         cout << key << ": " << frequencia << "\n";
                     }
+                    elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+                    cout << "Operação durou " << elapsed << "segundos.\n";
                 }
                 /*---------------------------------*/
                 else if (operacao == RANK_ST) {
+                    start = clock();
                     int r = st->rank(key);
+                    end = clock();
                     cout << r << "\n";
+                    elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+                    cout << "Operação durou " << elapsed << "segundos.\n";
                 }
                 /*---------------------------------*/
                 else if (operacao == DELETE_ST) {
+                    start = clock();
                     st->remove(key);
+                    end = clock();
                     cout << "\"" << key << "\" foi removida\n";
+                    elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+                    cout << "Operação durou " << elapsed << "segundos.\n";
                 }
                 else if (operacao == SELECT_ST) {
                     int pos = stoi(key);
+                    start = clock();
                     string chave = st->seleciona(pos);
+                    end = clock();
                     cout << "Posição " << key << " = " << chave << "\n";
+                    elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+                    cout << "Operação durou " << elapsed << "segundos.\n";
                 }
                 else {
                     ERROR(operacao nao reconhecida);
                 }
             }
         }
-        /*if (operacao != NULL) free(operacao);
-        free(linha);*/
         PROMPT;
     }
     cout << "\n";

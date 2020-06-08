@@ -3,29 +3,28 @@
 #include <cstdlib>
 #include <string>
 #include <time.h>
-#ifndef LO_H
-#define LO_H
+#ifndef LD_H
+#define LD_H
 
 
-/***************** Lista Ordenada **************************/
-struct celulaOrd
+/***************** Lista Desordenada **************************/
+struct celulaDes
 {
     std::string chave;
     int valor;
-    struct celulaOrd * prox;
+    struct celulaDes * prox;
 };
-typedef struct celulaOrd CelulaOrd;
+typedef struct celulaDes CelulaDes;
 
 template<class Chave, class Item>
-class listaOrd
+class listaDes
 {
     private:
-    CelulaOrd * ini;
-    int n;
+    CelulaDes * ini;
 
     public:
-    listaOrd(std::string texto); /* construtor */
-    ~listaOrd();/* destrutor */
+    listaDes(std::string texto); /* construtor */
+    ~listaDes();/* destrutor */
 
     void insere(Chave chave, Item valor);
     Item devolve(Chave chave);/*devolve o valor*/
@@ -35,14 +34,15 @@ class listaOrd
 };
 
 template <class Chave, class Item>
-listaOrd<Chave, Item>::listaOrd(std::string texto)
+listaDes<Chave, Item>::listaDes(std::string texto)
 {
     std::fstream arquivo;
     std::string str;
     int aux = 0;
-    ini = new CelulaOrd;
+    ini = new CelulaDes;
     ini->chave = "";
     ini->valor = 0;
+    ini->prox = nullptr;
     arquivo.open(texto);
 
     if (arquivo.fail()) {
@@ -58,10 +58,9 @@ listaOrd<Chave, Item>::listaOrd(std::string texto)
 }
 
 template<class Chave, class Item>
-listaOrd<Chave, Item>::~listaOrd()
+listaDes<Chave, Item>::~listaDes()
 {
-    CelulaOrd * aux;
-    aux = ini->prox;
+    CelulaDes * aux;
     while(ini->prox != nullptr){
         aux = ini->prox;
         ini->prox = aux->prox;
@@ -71,34 +70,35 @@ listaOrd<Chave, Item>::~listaOrd()
 }
 
 template <class Chave, class Item> 
-void listaOrd<Chave, Item>::insere(Chave chave, Item valor)
+void listaDes<Chave, Item>::insere(Chave chave, Item valor)
 {
-    CelulaOrd *i, * q;
+    CelulaDes * i;
+    CelulaDes * aux;
+    aux = nullptr;
     i = ini;
-    q = ini;
-    while(i->prox != nullptr && i->prox->chave <= chave){
+    while(i->prox != nullptr && i->chave != chave) 
         i = i->prox;
-    }
 
     if(i->chave == chave){
         i->valor = valor;
     }
     else{
-       q = new CelulaOrd;
-       q->chave = chave;
-       q->valor = valor;
-       q->prox = i->prox;
-       i->prox = q;
+        aux = new CelulaDes;
+        aux->chave = chave;
+        aux->valor = valor;
+        aux->prox = nullptr;
+        i->prox = aux;
     }
 }
 
 template<class Chave, class Item>
-Item listaOrd<Chave, Item>::devolve(Chave chave)
+Item listaDes<Chave, Item>::devolve(Chave chave)
 {
-    CelulaOrd * i;
+    CelulaDes * i;
+    i = ini;
     for(i = ini->prox; i != nullptr; i = i->prox)
     {   
-        if(i->chave >= chave)
+        if(i->chave == chave)
             break;
     }
     if(i == nullptr || i->chave != chave) return 0;
@@ -106,9 +106,9 @@ Item listaOrd<Chave, Item>::devolve(Chave chave)
 }
 
 template<class Chave, class Item>
-void listaOrd<Chave, Item>::remove(Chave chave)
+void listaDes<Chave, Item>::remove(Chave chave)
 {
-    CelulaOrd *i,  *p;
+    CelulaDes *i,  *p;
     p = ini;
     i = ini->prox;
     while(i->chave != chave && i->prox != nullptr){
@@ -122,36 +122,29 @@ void listaOrd<Chave, Item>::remove(Chave chave)
 }
 
 template<class Chave, class Item>
-int listaOrd<Chave, Item>::rank(Chave chave)
+int listaDes<Chave, Item>::rank(Chave chave)
 {
-    CelulaOrd *i;
+    CelulaDes *i;
     int ans;
     ans = 0;
     i = ini->prox;
     while(i != nullptr){
         if(i->chave < chave) ans++;
-        else break;
         i = i->prox;
     }
     return ans;
 }
 
 template<class Chave, class Item>
-Chave listaOrd<Chave, Item>::seleciona(int k)
+Chave listaDes<Chave, Item>::seleciona(int k)
 {
-    CelulaOrd *i;
-    int r;
-    r = 0;
+    CelulaDes *i;
     i = ini->prox;
-
     while(i != nullptr){
-        if(r == k) break;
+        if(rank(i->chave) == k) break;
         i = i->prox;
-        r++;
     }
-
-    if(i != nullptr) return i->chave;
-    return "";
+    return i->chave;
 }
 
 

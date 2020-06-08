@@ -5,7 +5,7 @@
 #include <time.h>
 #ifndef HT_H
 #define HT_H
-const int MAX = 1009;
+const int MAX = 524287;
 
 /********************  Hash Table **************************/
 struct cel
@@ -84,13 +84,12 @@ template <class Chave, class Item>
 int hashTable<Chave, Item>::hash(Chave x)
 {
     int ans, p, i;
-    p = 131;
+    p = 256;
     ans = 0;
     for(i = 0; x[i] != '\0'; i++)
     {
-        ans = ans*p + x[i];
-        while(ans >= MAX) ans -= MAX;
-        while(ans < 0) ans += MAX;
+        ans = (ans*p + x[i])%MAX;
+        if(ans < 0) ans += MAX;
     }
     
     return ans;

@@ -258,6 +258,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /home/davi/eps/mac323/relatorio.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-03.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-01.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc

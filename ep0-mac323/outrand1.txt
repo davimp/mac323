@@ -1,0 +1,123 @@
+*--------------------------------------------------------------------------------------*
+TEMPO : 0 de 2
+6 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   ED922  |      AAF       |    NÃO     |        1        |     92      | POUSO
+    |   WE293  |      PUC       |    NÃO     |        1        |     36      | POUSO
+    |   HJ503  |      SAO       |    NÃO     |        1        |     55      | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  3
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  0
+4) Quantidade de combustivel dos aviões em espera para pousar:  183
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : IO093
+   Pista 2 : DF879
+   Pista 3 : TG535
+*--------------------------------------------------------------------------------------*
+TEMPO : 1 de 2
+2 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   ED922  |      AAF       |    NÃO     |        2        |     91      | POUSO
+    |   WE293  |      PUC       |    NÃO     |        2        |     35      | POUSO
+    |   HJ503  |      SAO       |    NÃO     |        2        |     54      | POUSO
+    |   VB615  |      ORL       |    NÃO     |        1        |     36      | DECOLAGEM
+    |   KL937  |      DKL       |    NÃO     |        1        |     44      | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  7
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  1
+4) Quantidade de combustivel dos aviões em espera para pousar:  224
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : IO093
+   Pista 2 : DF879
+   Pista 3 : TG535
+*--------------------------------------------------------------------------------------*
+TEMPO : 2 de 2
+7 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   ED922  |      AAF       |    NÃO     |        3        |     90      | POUSO
+    |   WE293  |      PUC       |    NÃO     |        3        |     34      | POUSO
+    |   HJ503  |      SAO       |    NÃO     |        3        |     53      | POUSO
+    |   VB615  |      ORL       |    NÃO     |        2        |     36      | DECOLAGEM
+    |   KL937  |      DKL       |    NÃO     |        2        |     43      | POUSO
+    |   HJ430  |      IKO       |    NÃO     |        1        |     78      | DECOLAGEM
+    |   WS314  |      QQQ       |    NÃO     |        1        |     76      | DECOLAGEM
+    |   CV266  |      DKL       |    NÃO     |        1        |     69      | POUSO
+    |   YH717  |      EDC       |    NÃO     |        1        |     51      | POUSO
+    |   WE061  |      ORL       |    NÃO     |        1        |     18      | POUSO
+    |   AS177  |      GRU       |    NÃO     |        1        |     8       | POUSO
+    |   TG673  |      UJM       |    NÃO     |        1        |     82      | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  16
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  4
+4) Quantidade de combustivel dos aviões em espera para pousar:  448
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : IO093
+   Pista 2 : DF879
+   Pista 3 : TG535
+*--------------------------------------------------------------------------------------*

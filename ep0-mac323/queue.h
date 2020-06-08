@@ -257,7 +257,7 @@ Plane Queue::toEmergencyPop()
 
     aviao.emergency = 0;
 
-    while(p->next != nullptr && (p->next->plane.fuel) > 0)
+    while(p->next != nullptr && (p->next->plane.fuel) > 0 && (p->next->plane.waiting_time) <= (p->next->plane.estimated_time))
         p = p->next;
     
     if(p->next != nullptr)

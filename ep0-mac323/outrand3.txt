@@ -1,0 +1,295 @@
+*--------------------------------------------------------------------------------------*
+TEMPO : 0 de 5
+5 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YH446  |      PLO       |    NÃO     |        1        |     15      | DECOLAGEM
+    |   SD848  |      UTI       |    NÃO     |        1        |     46      | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  1
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  1
+4) Quantidade de combustivel dos aviões em espera para pousar:  46
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : TY392
+   Pista 2 : ED288
+   Pista 3 : XC050
+*--------------------------------------------------------------------------------------*
+TEMPO : 1 de 5
+2 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YH446  |      PLO       |    NÃO     |        2        |     15      | DECOLAGEM
+    |   SD848  |      UTI       |    NÃO     |        2        |     45      | POUSO
+    |   ER299  |      TGB       |    NÃO     |        1        |     96      | POUSO
+    |   YU645  |      WSX       |    NÃO     |        1        |     66      | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  4
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  2
+4) Quantidade de combustivel dos aviões em espera para pousar:  207
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : TY392
+   Pista 2 : ED288
+   Pista 3 : XC050
+*--------------------------------------------------------------------------------------*
+TEMPO : 2 de 5
+3 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YH446  |      PLO       |    NÃO     |        3        |     15      | DECOLAGEM
+    |   SD848  |      UTI       |    NÃO     |        3        |     44      | POUSO
+    |   ER299  |      TGB       |    NÃO     |        2        |     95      | POUSO
+    |   YU645  |      WSX       |    NÃO     |        2        |     65      | POUSO
+    |   ER830  |      EDC       |    NÃO     |        1        |     89      | POUSO
+    |   FG156  |      RHJ       |    NÃO     |        1        |     77      | DECOLAGEM
+    |   RF601  |      RFV       |    NÃO     |        1        |     5       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+     Essa fila não possui aviões
+
+   1.4) aviões que decolaram 
+
+     Essa fila não possui aviões
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  9
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  4
+4) Quantidade de combustivel dos aviões em espera para pousar:  298
+5) Quantidade de combustivel disponível dos avioes que pousaram:  0
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : TY392
+   Pista 2 : ED288
+   Pista 3 : XC050
+*--------------------------------------------------------------------------------------*
+TEMPO : 3 de 5
+8 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YU645  |      WSX       |    NÃO     |        3        |     64      | POUSO
+    |   ER830  |      EDC       |    NÃO     |        2        |     88      | POUSO
+    |   FG156  |      RHJ       |    NÃO     |        2        |     77      | DECOLAGEM
+    |   RF601  |      RFV       |    NÃO     |        2        |     4       | POUSO
+    |   RT536  |      ORL       |    NÃO     |        1        |     8       | DECOLAGEM
+    |   QA837  |      PUC       |    NÃO     |        1        |     74      | DECOLAGEM
+    |   NM330  |      WSX       |    NÃO     |        1        |     93      | POUSO
+    |   UJ207  |      JBL       |    NÃO     |        1        |     34      | DECOLAGEM
+    |   XC410  |      FRE       |    NÃO     |        1        |     44      | POUSO
+    |   ZX384  |      YHN       |    NÃO     |        1        |     14      | POUSO
+    |   RT817  |      AAF       |    NÃO     |        1        |     87      | DECOLAGEM
+    |   OP081  |      NAT       |    NÃO     |        1        |     32      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   TY392  |      PUC       |    NÃO     |        0        |     1       | DECOLAGEM
+    |   ED288  |      SAT       |    NÃO     |        0        |     37      | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   XC050  |      CGH       |    SIM     |        0        |     64      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  10
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  7
+4) Quantidade de combustivel dos aviões em espera para pousar:  307
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : SD848
+   Pista 2 : ER299
+   Pista 3 : YH446
+*--------------------------------------------------------------------------------------*
+TEMPO : 4 de 5
+8 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YU645  |      WSX       |    NÃO     |        4        |     63      | POUSO
+    |   ER830  |      EDC       |    NÃO     |        3        |     87      | POUSO
+    |   FG156  |      RHJ       |    NÃO     |        3        |     77      | DECOLAGEM
+    |   RF601  |      RFV       |    NÃO     |        3        |     3       | POUSO
+    |   RT536  |      ORL       |    NÃO     |        2        |     8       | DECOLAGEM
+    |   QA837  |      PUC       |    NÃO     |        2        |     74      | DECOLAGEM
+    |   NM330  |      WSX       |    NÃO     |        2        |     92      | POUSO
+    |   UJ207  |      JBL       |    NÃO     |        2        |     34      | DECOLAGEM
+    |   XC410  |      FRE       |    NÃO     |        2        |     43      | POUSO
+    |   ZX384  |      YHN       |    NÃO     |        2        |     13      | POUSO
+    |   RT817  |      AAF       |    NÃO     |        2        |     87      | DECOLAGEM
+    |   OP081  |      NAT       |    NÃO     |        2        |     32      | DECOLAGEM
+    |   TG837  |      GRU       |    NÃO     |        1        |     88      | POUSO
+    |   RT648  |      BRA       |    NÃO     |        1        |     34      | POUSO
+    |   QA431  |      DKL       |    NÃO     |        1        |     6       | POUSO
+    |   QW980  |      LKK       |    NÃO     |        1        |     66      | DECOLAGEM
+    |   IO916  |      EDC       |    NÃO     |        1        |     9       | POUSO
+    |   JK639  |      PUC       |    NÃO     |        1        |     63      | DECOLAGEM
+    |   XC014  |      UTI       |    NÃO     |        1        |     21      | POUSO
+    |   QA885  |      YHN       |    NÃO     |        1        |     0       | POUSO
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   TY392  |      PUC       |    NÃO     |        0        |     1       | DECOLAGEM
+    |   ED288  |      SAT       |    NÃO     |        0        |     37      | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   XC050  |      CGH       |    SIM     |        0        |     64      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+     Essa fila não possui aviões
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  22
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  15
+4) Quantidade de combustivel dos aviões em espera para pousar:  459
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : SD848
+   Pista 2 : ER299
+   Pista 3 : YH446
+*--------------------------------------------------------------------------------------*
+TEMPO : 5 de 5
+9 aviões entraram em contato
+1) Aviões: 
+   1.1) fila geral
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   YU645  |      WSX       |    NÃO     |        5        |     62      | POUSO
+    |   ER830  |      EDC       |    NÃO     |        4        |     86      | POUSO
+    |   FG156  |      RHJ       |    NÃO     |        4        |     77      | DECOLAGEM
+    |   RF601  |      RFV       |    NÃO     |        4        |     2       | POUSO
+    |   RT536  |      ORL       |    NÃO     |        3        |     8       | DECOLAGEM
+    |   QA837  |      PUC       |    NÃO     |        3        |     74      | DECOLAGEM
+    |   NM330  |      WSX       |    NÃO     |        3        |     91      | POUSO
+    |   UJ207  |      JBL       |    NÃO     |        3        |     34      | DECOLAGEM
+    |   XC410  |      FRE       |    NÃO     |        3        |     42      | POUSO
+    |   ZX384  |      YHN       |    NÃO     |        3        |     12      | POUSO
+    |   RT817  |      AAF       |    NÃO     |        3        |     87      | DECOLAGEM
+    |   OP081  |      NAT       |    NÃO     |        3        |     32      | DECOLAGEM
+    |   TG837  |      GRU       |    NÃO     |        2        |     87      | POUSO
+    |   RT648  |      BRA       |    NÃO     |        2        |     33      | POUSO
+    |   QA431  |      DKL       |    NÃO     |        2        |     5       | POUSO
+    |   QW980  |      LKK       |    NÃO     |        2        |     66      | DECOLAGEM
+    |   IO916  |      EDC       |    NÃO     |        2        |     8       | POUSO
+    |   JK639  |      PUC       |    NÃO     |        2        |     63      | DECOLAGEM
+    |   XC014  |      UTI       |    NÃO     |        2        |     20      | POUSO
+    |   WE288  |      NAT       |    NÃO     |        1        |     11      | POUSO
+    |   FG780  |      BSB       |    NÃO     |        1        |     28      | POUSO
+    |   SD385  |      GRU       |    NÃO     |        1        |     88      | DECOLAGEM
+    |   SD982  |      EDC       |    NÃO     |        1        |     31      | DECOLAGEM
+    |   RT077  |      TGB       |    NÃO     |        1        |     44      | DECOLAGEM
+    |   OP245  |      JDS       |    NÃO     |        1        |     19      | POUSO
+    |   ER967  |      RFV       |    NÃO     |        1        |     11      | POUSO
+    |   QW905  |      QQQ       |    NÃO     |        1        |     64      | DECOLAGEM
+
+   1.2) fila de emergencia 
+
+     Essa fila não possui aviões
+
+   1.3) aviões que pousaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   TY392  |      PUC       |    NÃO     |        0        |     1       | DECOLAGEM
+    |   ED288  |      SAT       |    NÃO     |        0        |     37      | POUSO
+
+   1.4) aviões que decolaram 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   XC050  |      CGH       |    SIM     |        0        |     64      | DECOLAGEM
+
+   1.5) aviões que deram erro 
+
+    |    ID    | DESTINO/ORIGEM | EMERGENCIA | TEMPO DE ESPERA | COMBUSTIVEL | POUSO/DECOLAGEM |
+    +----------+----------------+------------+-----------------+-------------+-----------------+
+    |   QA885  |      YHN       |    SIM     |        1        |     0       | POUSO
+    |   ER390  |      ORL       |    SIM     |        0        |     57      | POUSO
+
+2) Tempo de espera dos avioes que querem pousar (neste instante de tempo):  36
+3) Tempo de espera dos avioes que querem decolar (neste instante de tempo):  27
+4) Quantidade de combustivel dos aviões em espera para pousar:  517
+5) Quantidade de combustivel disponível dos avioes que pousaram:  37
+6) Quantidade de avioes em condição de emergência (total):  0
+7) Pistas :
+   Pista 1 : SD848
+   Pista 2 : ER299
+   Pista 3 : YH446
+*--------------------------------------------------------------------------------------*

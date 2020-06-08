@@ -129,13 +129,10 @@ O formato considerado para input é de acordo com classe "Plane" (mostrado na fi
     
             int estimated_time;
             int waiting_time;
-            /*auxiliar variable to control the time when the flight track will be ocupied*/
-            /*on this atribute, everyone begins with 3*/
     
         public:
             Plane(); /* default constructor */
             Plane(string t_id, string t_from_to, bool t_landing, bool emergency, int t_fuel, int t_estimated_time);
-            /*~plane();*/
             int track_time;
             int fuel;
             bool landing;
@@ -167,11 +164,9 @@ for(k = 0; k < K; k++)
 \end{lstlisting}
 
 
-\section*{Formato da saída}
+\section*{Formato da saída} 
 
-Algum texto aqui.\newline
-
-Além disso, a saída está sendo impressa com um formato específico em 7 partes diferentes  para cada instante de tempo (abaixo está a parte do código de impressão das filas).\newline
+A saída está sendo impressa com um formato específico em 7 partes diferentes  para cada instante de tempo (abaixo está a parte do código de impressão das filas), além de algumas outras infromações que podem ser vistas nos exemplos.\newline
 
 1) Imprime as 5 diferentes filas de aviões. Cada fila é impressa de acordo com o código da figura abaixo. \newline
 
@@ -221,6 +216,7 @@ Além disso, a saída está sendo impressa com um formato específico em 7 parte
     }   
 \end{lstlisting}
 
+Ou seja, cada fila é impressa em formato de tabela e contém as informações pedidas no enunciado do ep. \newline\newline
 
 \section*{Exemplos}
 
@@ -455,11 +451,68 @@ Saída:\newline
 No arquivo out3.txt\newline
 
 
+OBS: Os arquivos de saída foram enviados no .tar junto com os outros arquivos.
 
-\section*{Observações finais}
 
-Não consegui resolver como passar a saída dos exemplos de forma que ficasse legível no latex, então vou mandar os arquivos separados no .tar.
 
+\section*{Testes Aleatórios}
+
+    Para gerar os testes aleatórios, criei um programa "rand" que está em rand.cpp que gera um arquivo texto (.txt) aleatóriamente no formato de entrada citado anteriormente. No gerador de aviões aleatórios (que está numa função, randPlane()) coloquei pra que a chance de um avião seja de emergência seja de 5/100.\newline
+
+    O programa pede para digitar uma semente e depois digitar o nome do arquivo txt que será gerado. Depois disso, basta executar o programa mudando a entrada padrão para o txt que foi gerado (com "<" no terminal).
+
+\begin{lstlisting}[label={list:first},caption= Parte do código em rand.cpp que gera aviões aleatórios.]
+    Plane randPlane()
+    {
+        string r_id, r_from_to;
+        bool r_landing;
+        bool r_emergency;
+        int r_fuel,r_estimated_time;
+        int aux;
+    
+        aux = rand();
+        aux = aux%30;
+        r_id = "";
+        r_id += comp[aux];
+        for(int i = 0; i < 3; i++)
+        {
+            aux = rand();
+            r_id += '0' + aux%10;
+        } 
+    
+        aux = rand();
+        aux = aux%30;
+        r_from_to = places[aux];
+    
+    
+        aux = rand();
+        r_landing = aux%2;
+    
+        aux = rand();
+        aux = aux%100;
+        if(aux <= 5)
+            r_emergency = 1;
+        else
+            r_emergency = 0;
+    
+        
+        aux = rand();
+        aux = aux%100;
+        r_fuel = aux;
+    
+        aux = rand();
+        aux = aux%100;
+        r_estimated_time = aux;
+    
+        Plane aviao {r_id, r_from_to, r_landing, r_emergency, r_fuel, r_estimated_time};
+        return aviao;
+    } 
+\end{lstlisting}
+
+
+Partindo disso, fiz 5 testes que podem ser vistos na pasta do ep.\newline
+
+Os teste foam feitos pras sementes 1, 2, 3, 4, 5. A respetivas entradas são rand1.txt, rand2.txt, rand3.txt, rand4.txt, rand5.txt. As respetivas saídas são outrand1.txt, outrand2.txt, outrand3.txt, outrand4.txt, outrand5.txt.\newline
 
 
 \end{document}
